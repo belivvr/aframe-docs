@@ -7,7 +7,7 @@ node_modules
 #lib/core/MetadataBlog.js
 
 #website/translated_docs
-#website/build/
+website/build/
 website/yarn.lock
 website/node_modules
 
