@@ -14,6 +14,12 @@ const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
+
+  onClickHomeLogoToRedirect () {
+    console.log("Hello world!");
+    return "hello world!";
+  }
+
   render() {
     const {siteConfig, language = ''} = this.props;
     const {baseUrl, docsUrl} = siteConfig;
@@ -31,7 +37,7 @@ class HomeSplash extends React.Component {
 
     const Logo = (props) => (
       <div className="projectLogo">
-        <img src={props.img_src} alt="Project Logo" />
+        <img src={props.img_src} alt="Project Logo" onClick={this.onClickHomeLogoToRedirect}/>
       </div>
     );
 

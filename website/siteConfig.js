@@ -9,28 +9,29 @@
 // site configuration options.
 
 // List of projects/orgs using your project for the users page.
+
 const users = [
   {
     caption: 'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
+    image: 'img/undraw_open_source.svg',
     infoLink: 'https://www.facebook.com',
     pinned: true,
   },
 ];
 
 const siteConfig = {
-  title: 'Aframe Korea', // Title for your website.
+  // title: 'Aframe Korea', // Title for your website. / 이게 홈 태그랑 같이 물러있음
   tagline: 'A Aframe Korea site for koreans',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  url: 'https://aframe.belivvr.com', // Your website URL
+  baseUrl: '/aframe-docs/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
+  //   url: 'https://facebook.githubio',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'Aframe Korea',
+  projectName: 'aframe-docs',
   organizationName: 'facebook',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
@@ -48,9 +49,9 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
+  headerIcon: 'img/AFRAME_LOGO_TMP.webp',
   footerIcon: 'img/favicon.ico',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/AFRAME_LOGO_TMP.webp',
 
   /* Colors for website */
   colors: {
