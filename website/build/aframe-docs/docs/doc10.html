@@ -1,11 +1,115 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>JavaScript, Events, DOM APIs · undefined</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="[geometry]: ../components/geometry.md"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="JavaScript, Events, DOM APIs · undefined"/><meta property="og:type" content="website"/><meta property="og:url" content="https://aframe.belivvr.com/docs/aframe-docs/"/><meta property="og:description" content="[geometry]: ../components/geometry.md"/><meta property="og:image" content="https://aframe.belivvr.com/docs/aframe-docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://aframe.belivvr.com/docs/aframe-docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docs/aframe-docs/img/AFRAME_LOGO_TMP.webp"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://aframe.belivvr.com/docs/aframe-docs/blog/atom.xml" title="undefined Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://aframe.belivvr.com/docs/aframe-docs/blog/feed.xml" title="undefined Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docs/aframe-docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/docs/aframe-docs/css/main.css"/><script src="/docs/aframe-docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="https://developers.belivvr.com/"><img class="logo" src="/docs/aframe-docs/img/AFRAME_LOGO_TMP.webp"/><h2 class="headerTitleWithLogo"></h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/aframe-docs/docs/doc1" target="_self">Docs</a></li><li class=""><a href="https://github.com/belivvr/aframe-docs" target="_self">Github</a></li><li class=""><a href="/docs/aframe-docs/docs/doc4" target="_self">API</a></li><li class=""><a href="/docs/aframe-docs/help" target="_self">Help</a></li><li class=""><a href="/docs/aframe-docs/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Introduction</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc1">Best Practices</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc6">HTML 및 Primitives</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc7">Introduction</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc8">설치</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc9">상호 작용 및 컨트롤러</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/aframe-docs/docs/doc10">JavaScript, Events, DOM APIs</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc11">3D 모델</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc12">비주얼 인스펙터 및 개발 도구</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc13">VR 헤드셋 및 WebVR 브라우저</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc14">구성 요소 작성</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guide</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc2">three.js로 개발하기</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Core API</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc3">엔티티 컴포넌트 시스템</a></li></ul></div></div></section></div><script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>JavaScript, Events, DOM APIs · undefined</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Docusaurus" />
+  <meta name="description" content="[geometry]: ../components/geometry.md" />
+  <meta name="docsearch:language" content="en" />
+  <meta property="og:title" content="JavaScript, Events, DOM APIs · undefined" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aframe.belivvr.com/docs/aframe-docs/" />
+  <meta property="og:description" content="[geometry]: ../components/geometry.md" />
+  <meta property="og:image" content="https://aframe.belivvr.com/docs/aframe-docs/img/undraw_online.svg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://aframe.belivvr.com/docs/aframe-docs/img/undraw_tweetstorm.svg" />
+  <link rel="shortcut icon" href="/docs/aframe-docs/img/AFRAME_LOGO_TMP.webp" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+  <link rel="alternate" type="application/atom+xml" href="https://aframe.belivvr.com/docs/aframe-docs/blog/atom.xml"
+    title="undefined Blog ATOM Feed" />
+  <link rel="alternate" type="application/rss+xml" href="https://aframe.belivvr.com/docs/aframe-docs/blog/feed.xml"
+    title="undefined Blog RSS Feed" />
+  <script type="text/javascript" src="https://buttons.github.io/buttons.js"></script>
+  <script src="/docs/aframe-docs/js/scrollSpy.js"></script>
+  <link rel="stylesheet" href="/docs/aframe-docs/css/main.css" />
+  <script src="/docs/aframe-docs/js/codetabs.js"></script>
+</head>
+
+<body class="sideNavVisible separateOnPageNav">
+  <div class="fixedHeaderContainer">
+    <div class="headerWrapper wrapper">
+      <header><a href="/docs/aframe-docs/"><img class="logo" src="/docs/aframe-docs/img/AFRAME_LOGO_TMP.webp" />
+          <h2 class="headerTitleWithLogo"></h2>
+        </a>
+        <div class="navigationWrapper navigationSlider">
+          <nav class="slidingNav">
+            <ul class="nav-site nav-site-internal">
+              <li class="siteNavGroupActive"><a href="/docs/aframe-docs/docs/doc1.html" target="_self">Docs</a></li>
+              <li class=""><a href="https://github.com/belivvr/aframe-docs" target="_self">Github</a></li>
+              <li class=""><a href="/docs/aframe-docs/docs/doc4.html" target="_self">API</a></li>
+              <li class=""><a href="/docs/aframe-docs/help.html" target="_self">Help</a></li>
+              <li class=""><a href="/docs/aframe-docs/blog/" target="_self">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div class="navPusher">
+    <div class="docMainWrapper wrapper">
+      <div class="docsNavContainer" id="docsNav">
+        <nav class="toc">
+          <div class="toggleNav">
+            <section class="navWrapper wrapper">
+              <div class="navBreadcrumb wrapper">
+                <div class="navToggle" id="navToggler">
+                  <div class="hamburger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+                </div>
+                <h2><i>›</i><span>Introduction</span></h2>
+                <div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div>
+              </div>
+              <div class="navGroups">
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">Introduction</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc1.html">Best Practices</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc6.html">HTML 및 Primitives</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc7.html">Introduction</a></li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc8.html">설치</a></li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc9.html">상호 작용 및 컨트롤러</a></li>
+                    <li class="navListItem navListItemActive"><a class="navItem"
+                        href="/docs/aframe-docs/docs/doc10.html">JavaScript, Events, DOM APIs</a></li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc11.html">3D 모델</a></li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc12.html">비주얼 인스펙터 및 개발 도구</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc13.html">VR 헤드셋 및 WebVR
+                        브라우저</a></li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc14.html">구성 요소 작성</a></li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">Guide</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc2.html">three.js로 개발하기</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">Core API</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc3.html">엔티티 컴포넌트 시스템</a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <script>
             var coll = document.getElementsByClassName('collapsible');
             var checkActiveCategory = true;
             for (var i = 0; i < coll.length; i++) {
               var links = coll[i].nextElementSibling.getElementsByTagName('*');
-              if (checkActiveCategory){
+              if (checkActiveCategory) {
                 for (var j = 0; j < links.length; j++) {
-                  if (links[j].classList.contains('navListItemActive')){
+                  if (links[j].classList.contains('navListItemActive')) {
                     coll[i].nextElementSibling.classList.toggle('hide');
                     coll[i].childNodes[1].classList.toggle('rotate');
                     checkActiveCategory = false;
@@ -14,7 +118,7 @@
                 }
               }
 
-              coll[i].addEventListener('click', function() {
+              coll[i].addEventListener('click', function () {
                 var arrow = this.childNodes[1];
                 arrow.classList.toggle('rotate');
                 var content = this.nextElementSibling;
@@ -22,18 +126,18 @@
               });
             }
 
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
               createToggler('#navToggler', '#docsNav', 'docsSliderActive');
               createToggler('#tocToggler', 'body', 'tocActive');
 
               var headings = document.querySelector('.toc-headings');
-              headings && headings.addEventListener('click', function(event) {
+              headings && headings.addEventListener('click', function (event) {
                 var el = event.target;
-                while(el !== headings){
+                while (el !== headings) {
                   if (el.tagName === 'A') {
                     document.body.classList.remove('tocActive');
                     break;
-                  } else{
+                  } else {
                     el = el.parentNode;
                   }
                 }
@@ -47,26 +151,53 @@
                   return;
                 }
 
-                toggler.onclick = function(event) {
+                toggler.onclick = function (event) {
                   event.preventDefault();
 
                   target.classList.toggle(className);
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/belivvr/aframe-docs/blob/master/docs/javascript-events-dom-apis.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">JavaScript, Events, DOM APIs</h1></header><article><div><span><p>A-Frame은 HTML이므로 일반적인 웹 개발에서와 같이 JavaScript and <a href="https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction">DOM</a> API를 사용하여 장면과 해당 엔티티를 제어 할 수 있습니다.</p>
-<p><img src="https://cloud.githubusercontent.com/assets/674727/20290105/e1573210-aa92-11e6-8f1a-8a31fb6dad52.jpg" alt="With JavaScript">
-<small class="image-caption"><i>Image by Ruben Mueller from <a href="http://vrjump.de">The VR Jump</a>.</i></small></p>
-<p>장면의 모든 요소, 심지어 <code>&lt;a-box&gt;</code> 또는 <code>&lt;a-sky&gt;</code>와 같은 요소도 엔티티입니다. (<code>&lt;a-entity&gt;</code>로 표시됨).
-A-Frame은 HTML 요소 프로토타입을 수정하여 특정 DOM API를 A-Frame에 맞춤화하는 동작을 추가합니다.
-아래에서 설명하는 대부분의 API에 대한 참조는 <a href="../core/entity.md">Entity API 설명서</a>를 참조하십시오.</p>
-<!--toc-->
-<h2><a class="anchor" aria-hidden="true" id="a-frame용-javascript-코드를-배치할-위치"></a><a href="#a-frame용-javascript-코드를-배치할-위치" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A-Frame용 JavaScript 코드를 배치할 위치</h2>
-<p><strong>중요:</strong> JavaScript 및 DOM API를 사용하는 다양한 방법을 살펴보기 전에 [A-frame 컴포넌트]내에 JavaScript 코드를
-캡슐화하는 방법을 규정합니다. 컴포넌트 코드를 모듈화하고, 논리와 동작을 HTML에서 볼 수 있도록 하며,
-코드가 정확한 시간에 실행되도록 합니다(예: 장면 및 엔티티가 연결 및 초기화 된 후).
-가장 기본적인 예로, <code>&lt;a-scene&gt;</code> <em>앞</em>에  <code>console.log</code> 컴포넌트를 등록합니다:</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
+          </script>
+        </nav>
+      </div>
+      <div class="container mainContainer docsContainer">
+        <div class="wrapper">
+          <div class="post">
+            <header class="postHeader"><a class="edit-page-link button"
+                href="https://github.com/belivvr/aframe-docs/blob/master/docs/javascript-events-dom-apis.md"
+                target="_blank" rel="noreferrer noopener">Edit</a>
+              <h1 id="__docusaurus" class="postHeaderTitle">JavaScript, Events, DOM APIs</h1>
+            </header>
+            <article>
+              <div><span>
+                  <p>A-Frame은 HTML이므로 일반적인 웹 개발에서와 같이 JavaScript and <a
+                      href="https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction">DOM</a> API를
+                    사용하여 장면과 해당 엔티티를 제어 할 수 있습니다.</p>
+                  <p><img
+                      src="https://cloud.githubusercontent.com/assets/674727/20290105/e1573210-aa92-11e6-8f1a-8a31fb6dad52.jpg"
+                      alt="With JavaScript">
+                    <small class="image-caption"><i>Image by Ruben Mueller from <a href="http://vrjump.de">The VR
+                          Jump</a>.</i></small>
+                  </p>
+                  <p>장면의 모든 요소, 심지어 <code>&lt;a-box&gt;</code> 또는 <code>&lt;a-sky&gt;</code>와 같은 요소도 엔티티입니다.
+                    (<code>&lt;a-entity&gt;</code>로 표시됨).
+                    A-Frame은 HTML 요소 프로토타입을 수정하여 특정 DOM API를 A-Frame에 맞춤화하는 동작을 추가합니다.
+                    아래에서 설명하는 대부분의 API에 대한 참조는 <a href="../core/entity.md">Entity API 설명서</a>를 참조하십시오.</p>
+                  <!--toc-->
+                  <h2><a class="anchor" aria-hidden="true" id="a-frame용-javascript-코드를-배치할-위치"></a><a
+                      href="#a-frame용-javascript-코드를-배치할-위치" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>A-Frame용 JavaScript 코드를 배치할 위치</h2>
+                  <p><strong>중요:</strong> JavaScript 및 DOM API를 사용하는 다양한 방법을 살펴보기 전에 [A-frame 컴포넌트]내에 JavaScript 코드를
+                    캡슐화하는 방법을 규정합니다. 컴포넌트 코드를 모듈화하고, 논리와 동작을 HTML에서 볼 수 있도록 하며,
+                    코드가 정확한 시간에 실행되도록 합니다(예: 장면 및 엔티티가 연결 및 초기화 된 후).
+                    가장 기본적인 예로, <code>&lt;a-scene&gt;</code> <em>앞</em>에 <code>console.log</code> 컴포넌트를 등록합니다:</p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
   <span class="hljs-attr">schema</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>},
 
   <span class="hljs-attr">init</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
@@ -75,18 +206,32 @@ A-Frame은 HTML 요소 프로토타입을 수정하여 특정 DOM API를 A-Frame
   }
 });
 </code></pre>
-<p>그리고 <em>등록 후</em> HTML의 컴포넌트를 사용합니다:</p>
-<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span> <span class="hljs-attr">log</span>=<span class="hljs-string">"Hello, Scene!"</span>&gt;</span>
+                  <p>그리고 <em>등록 후</em> HTML의 컴포넌트를 사용합니다:</p>
+                  <pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span> <span class="hljs-attr">log</span>=<span class="hljs-string">"Hello, Scene!"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-box</span> <span class="hljs-attr">log</span>=<span class="hljs-string">"Hello, Box!"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-box</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
 </code></pre>
-<p>컴포넌트는 모든 코드를 캡슐화하여 재사용이 가능하고 선언 및 공유가 가능합니다.런타임에 탐색만 한다면 브라우저의 개발자 도구 콘솔을 사용하여 현장에서 JavaScript를 실행할 수 있습니다.</p>
-<p>기존 2D 스크립팅과 마찬가지로 <code>&lt;a-scene&gt;</code> 뒤에 A-Frame 관련 JavaScript를<br>
-<code>&lt;a-scene&gt;</code>태그에 넣으려고 하지 마십시오. 그렇게 하면, 우리는 적절한 시간에 코드가 실행되도록 특별한 조치를 취해야 합니다. (<a href="../core/scene.md#running-content-scripts-on-the-scene">장면에서 콘텐츠 스크립트 실행 참조</a>).</p>
-<h2><a class="anchor" aria-hidden="true" id="querying-및-traversing을-통해-엔티티-가져오기"></a><a href="#querying-및-traversing을-통해-엔티티-가져오기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Querying 및 Traversing을 통해 엔티티 가져오기</h2>
-<p>장면 그래프로 DOM에 대한 놀라운 점은 표준 DOM이 <code>.querySelector()</code> and <code>.querySelectorAll()</code>을 통해 이동, 쿼리, 찾기 및 선택 할수 있는 유틸리티를 제공한다는 것입니다. 원래 <a href="https://api.jquery.com/category/selectors/">jQueryselectors</a>에서 영감을 받은 것으로 <a href="https://developer.mozilla.org/docs/Web/API/Document/querySelector">MDN에서 쿼리 선택기에 대해 배울 수 있습니다</a>.</p>
-<p>몇 가지 예제 쿼리 선택기를 실행해 보겠습니다. 아래의 장면을 예로 들어 보겠습니다.</p>
-<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+                  <p>컴포넌트는 모든 코드를 캡슐화하여 재사용이 가능하고 선언 및 공유가 가능합니다.런타임에 탐색만 한다면 브라우저의 개발자 도구 콘솔을 사용하여 현장에서 JavaScript를 실행할
+                    수 있습니다.</p>
+                  <p>기존 2D 스크립팅과 마찬가지로 <code>&lt;a-scene&gt;</code> 뒤에 A-Frame 관련 JavaScript를<br>
+                    <code>&lt;a-scene&gt;</code>태그에 넣으려고 하지 마십시오. 그렇게 하면, 우리는 적절한 시간에 코드가 실행되도록 특별한 조치를 취해야 합니다. (<a
+                      href="../core/scene.md#running-content-scripts-on-the-scene">장면에서 콘텐츠 스크립트 실행 참조</a>).
+                  </p>
+                  <h2><a class="anchor" aria-hidden="true" id="querying-및-traversing을-통해-엔티티-가져오기"></a><a
+                      href="#querying-및-traversing을-통해-엔티티-가져오기" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>Querying 및 Traversing을 통해 엔티티 가져오기</h2>
+                  <p>장면 그래프로 DOM에 대한 놀라운 점은 표준 DOM이 <code>.querySelector()</code> and <code>.querySelectorAll()</code>을
+                    통해 이동, 쿼리, 찾기 및 선택 할수 있는 유틸리티를 제공한다는 것입니다. 원래 <a
+                      href="https://api.jquery.com/category/selectors/">jQueryselectors</a>에서 영감을 받은 것으로 <a
+                      href="https://developer.mozilla.org/docs/Web/API/Document/querySelector">MDN에서 쿼리 선택기에 대해 배울 수
+                      있습니다</a>.</p>
+                  <p>몇 가지 예제 쿼리 선택기를 실행해 보겠습니다. 아래의 장면을 예로 들어 보겠습니다.</p>
+                  <pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a-box</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"redBox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"clickable"</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"red"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-box</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"clickable"</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"blue"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
@@ -96,66 +241,93 @@ A-Frame은 HTML 요소 프로토타입을 수정하여 특정 DOM API를 A-Frame
   <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="queryselector-사용"></a><a href="#queryselector-사용" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.querySelector()</code> 사용</h3>
-<p>하나의 요소만 가져오려면 <code>.querySelector()</code>를 사용하여 하나의 요소를 반환합니다.
-장면 요소를 살펴보겠습니다:</p>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> sceneEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-scene'</span>);
+                  <h3><a class="anchor" aria-hidden="true" id="queryselector-사용"></a><a href="#queryselector-사용"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.querySelector()</code> 사용</h3>
+                  <p>하나의 요소만 가져오려면 <code>.querySelector()</code>를 사용하여 하나의 요소를 반환합니다.
+                    장면 요소를 살펴보겠습니다:</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> sceneEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-scene'</span>);
 </code></pre>
-<p>컴포넌트 내에서 작업하는 경우 쿼리할 필요 없이 장면 요소에 대한 참조가 이미 있습니다.
-모든 엔티티는 해당 장면 요소에 대한 참조를 갖습니다:</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'foo'</span>, {
+                  <p>컴포넌트 내에서 작업하는 경우 쿼리할 필요 없이 장면 요소에 대한 참조가 이미 있습니다.
+                    모든 엔티티는 해당 장면 요소에 대한 참조를 갖습니다:</p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'foo'</span>, {
   <span class="hljs-attr">init</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.el.sceneEl);  <span class="hljs-comment">// Reference to the scene element.</span>
   }
 });
 </code></pre>
-<p>요소에 ID가 있는 경우 ID 선택기(예: <code>#&lt;ID&gt;</code>). 를 사용할 수 있습니다.<br>
-ID가 있는 빨간 상자를 잡아봅시다. 전체 문서에 대한 쿼리 선택기를 수행하기 전에.
-여기서는 장면의 범위 내에서 쿼리 선택기를 수행합니다.
-쿼리 선택기를 사용하면 다음 요소 내에서 쿼리 범위를 제한할 수 있습니다:</p>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> sceneEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-scene'</span>);
+                  <p>요소에 ID가 있는 경우 ID 선택기(예: <code>#&lt;ID&gt;</code>). 를 사용할 수 있습니다.<br>
+                    ID가 있는 빨간 상자를 잡아봅시다. 전체 문서에 대한 쿼리 선택기를 수행하기 전에.
+                    여기서는 장면의 범위 내에서 쿼리 선택기를 수행합니다.
+                    쿼리 선택기를 사용하면 다음 요소 내에서 쿼리 범위를 제한할 수 있습니다:</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> sceneEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-scene'</span>);
 <span class="hljs-built_in">console</span>.log(sceneEl.querySelector(<span class="hljs-string">'#redBox'</span>));
 <span class="hljs-comment">// &lt;a-box id="redBox" class="clickable" color="red"&gt;&lt;/a-box&gt;</span>
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="queryselectorall-사용"></a><a href="#queryselectorall-사용" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.querySelectorAll()</code> 사용</h3>
-<p>요소 그룹을 가져오려면 요소 배열을 반환하는<code>.querySelectorAll()</code>을 사용합니다. 요소 이름에 대해 쿼리할 수 있습니다:</p>
-<pre><code class="hljs css language-js"><span class="hljs-built_in">console</span>.log(sceneEl.querySelectorAll(<span class="hljs-string">'a-box'</span>));
+                  <h3><a class="anchor" aria-hidden="true" id="queryselectorall-사용"></a><a href="#queryselectorall-사용"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.querySelectorAll()</code> 사용</h3>
+                  <p>요소 그룹을 가져오려면 요소 배열을 반환하는<code>.querySelectorAll()</code>을 사용합니다. 요소 이름에 대해 쿼리할 수 있습니다:</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-built_in">console</span>.log(sceneEl.querySelectorAll(<span class="hljs-string">'a-box'</span>));
 <span class="hljs-comment">// [</span>
 <span class="hljs-comment">//  &lt;a-box id="redBox" class="clickable" color="red"&gt;&lt;/a-box&gt;,</span>
 <span class="hljs-comment">//  &lt;a-box color="green"&gt;&lt;/a-box&gt;</span>
 <span class="hljs-comment">// ]</span>
 </code></pre>
-<p>클래스 선택기를 사용하여 클래스가 있는 요소를 쿼리할 수 있습니다(예:<code>.&lt;CLASS_NAME&gt;</code>).
-<code>clickable</code>클래스가 있는 모든 엔티티를 살펴보겠습니다:</p>
-<pre><code class="hljs css language-js"><span class="hljs-built_in">console</span>.log(sceneEl.querySelectorAll(<span class="hljs-string">'.clickable'</span>));
+                  <p>클래스 선택기를 사용하여 클래스가 있는 요소를 쿼리할 수 있습니다(예:<code>.&lt;CLASS_NAME&gt;</code>).
+                    <code>clickable</code>클래스가 있는 모든 엔티티를 살펴보겠습니다:
+                  </p>
+                  <pre><code class="hljs css language-js"><span class="hljs-built_in">console</span>.log(sceneEl.querySelectorAll(<span class="hljs-string">'.clickable'</span>));
 <span class="hljs-comment">// [</span>
 <span class="hljs-comment">//  &lt;a-box id="redBox" class="clickable" color="red"&gt;&lt;/a-box&gt;</span>
 <span class="hljs-comment">//  &lt;a-sphere class="clickable" color="blue"&gt;&lt;/a-sphere&gt;</span>
 <span class="hljs-comment">// ]</span>
 </code></pre>
-<p>속성 선택기(예: <code>[&lt;ATTRIBUTE_NAME&gt;]</code>)를 사용하여
-속성(또는 컴포넌트)을 포함하는 요소를 쿼리할 수 있습니다.
-라이트가 있는 모든 엔티티를 살펴보겠습니다.</p>
-<pre><code class="hljs css language-js"><span class="hljs-built_in">console</span>.log(sceneEl.querySelectorAll(<span class="hljs-string">'[light]'</span>));
+                  <p>속성 선택기(예: <code>[&lt;ATTRIBUTE_NAME&gt;]</code>)를 사용하여
+                    속성(또는 컴포넌트)을 포함하는 요소를 쿼리할 수 있습니다.
+                    라이트가 있는 모든 엔티티를 살펴보겠습니다.</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-built_in">console</span>.log(sceneEl.querySelectorAll(<span class="hljs-string">'[light]'</span>));
 <span class="hljs-comment">// [</span>
 <span class="hljs-comment">//  &lt;a-entity light="type: ambient"&gt;&lt;/a-entity&gt;</span>
 <span class="hljs-comment">// &lt;a-entity light="type: directional"&gt;&lt;/a-entity&gt;</span>
 <span class="hljs-comment">// ]</span>
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="queryselectorall를-사용하여-엔티티를-반복하기"></a><a href="#queryselectorall를-사용하여-엔티티를-반복하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.querySelectorAll()</code>를 사용하여 엔티티를 반복하기</h3>
-<p><code>.querySelectorAll()</code>을 사용하여 엔티티 그룹을 가져온 경우,
-<code>for</code>루프를 사용하여 엔티티를 반복할 수 있습니다.
-<code>*</code>로 장면의 모든 요소를 루핑합니다.</p>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> els = sceneEl.querySelectorAll(<span class="hljs-string">'*'</span>);
+                  <h3><a class="anchor" aria-hidden="true" id="queryselectorall를-사용하여-엔티티를-반복하기"></a><a
+                      href="#queryselectorall를-사용하여-엔티티를-반복하기" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.querySelectorAll()</code>를 사용하여 엔티티를 반복하기</h3>
+                  <p><code>.querySelectorAll()</code>을 사용하여 엔티티 그룹을 가져온 경우,
+                    <code>for</code>루프를 사용하여 엔티티를 반복할 수 있습니다.
+                    <code>*</code>로 장면의 모든 요소를 루핑합니다.
+                  </p>
+                  <pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> els = sceneEl.querySelectorAll(<span class="hljs-string">'*'</span>);
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; els.length; i++) {
   <span class="hljs-built_in">console</span>.log(els[i]);
 }
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="성능에-대한-참고-사항"></a><a href="#성능에-대한-참고-사항" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>성능에 대한 참고 사항</h4>
-<p><code>.querySelector</code> 및 <code>.querySelectorAll</code>은 엔티티를 검색하기 위해 DOM을 루핑하는
-데 시간이 걸리므로 모든 프레임에서 호출되는 <code>tick</code> 및 <code>talk</code>함수에 사용하지 마십시오.
-대신 캐시된 엔티티 목록을 유지하고 쿼리 선택기를 미리 호출한 다음 반복합니다.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'query-selector-example'</span>, {
+                  <h4><a class="anchor" aria-hidden="true" id="성능에-대한-참고-사항"></a><a href="#성능에-대한-참고-사항"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>성능에 대한 참고 사항</h4>
+                  <p><code>.querySelector</code> 및 <code>.querySelectorAll</code>은 엔티티를 검색하기 위해 DOM을 루핑하는
+                    데 시간이 걸리므로 모든 프레임에서 호출되는 <code>tick</code> 및 <code>talk</code>함수에 사용하지 마십시오.
+                    대신 캐시된 엔티티 목록을 유지하고 쿼리 선택기를 미리 호출한 다음 반복합니다.</p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'query-selector-example'</span>, {
   <span class="hljs-attr">init</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">this</span>.entities = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">'.box'</span>);
   },
@@ -168,50 +340,86 @@ ID가 있는 빨간 상자를 잡아봅시다. 전체 문서에 대한 쿼리 �
   }
 });
 </code></pre>
-<h2><a class="anchor" aria-hidden="true" id="retrieving-component-data-with-getattribute"></a><a href="#retrieving-component-data-with-getattribute" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Retrieving Component Data with <code>.getAttribute()</code></h2>
-<p><code>.getAttribute</code>를 통해 엔티티 컴포넌트의 데이터를 가져올 수 있습니다.
-A-Frame <code>.getAttribute</code>은 문자열이 대신 값을 반환합니다.(예: 컴포넌트는
-일반적으로 여러 속성으로 구성되기 때문에 대부분의 경우 객체를 반환하거나
-<code>.getAttribute('visible')</code>에 대한 실제 부울을 반환합니다. 종종
-<code>.getAttribute</code>는 컴포넌트의 내부 데이터 객체를 반환하므로 개체를 직접 수정하지 마십시오.</p>
-<pre><code class="hljs css language-js"><span class="hljs-comment">// &lt;a-entity geometry="primitive: sphere; radius: 2"&gt;&lt;/a-entity&gt;</span>
+                  <h2><a class="anchor" aria-hidden="true" id="retrieving-component-data-with-getattribute"></a><a
+                      href="#retrieving-component-data-with-getattribute" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>Retrieving Component Data with <code>.getAttribute()</code></h2>
+                  <p><code>.getAttribute</code>를 통해 엔티티 컴포넌트의 데이터를 가져올 수 있습니다.
+                    A-Frame <code>.getAttribute</code>은 문자열이 대신 값을 반환합니다.(예: 컴포넌트는
+                    일반적으로 여러 속성으로 구성되기 때문에 대부분의 경우 객체를 반환하거나
+                    <code>.getAttribute('visible')</code>에 대한 실제 부울을 반환합니다. 종종
+                    <code>.getAttribute</code>는 컴포넌트의 내부 데이터 객체를 반환하므로 개체를 직접 수정하지 마십시오.
+                  </p>
+                  <pre><code class="hljs css language-js"><span class="hljs-comment">// &lt;a-entity geometry="primitive: sphere; radius: 2"&gt;&lt;/a-entity&gt;</span>
 el.getAttribute(<span class="hljs-string">'geometry'</span>);
 <span class="hljs-comment">// &gt;&gt; {"primitive": "sphere", "radius": 2, ...}</span>
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="position-및-scale-검색"></a><a href="#position-및-scale-검색" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>position</code> 및 <code>scale</code> 검색</h3>
-<p><code>el.getAttribute('position')</code> 또는 <code>el.getAttribute('scale')</code>를 실행하면
-<a href="https://threejs.org/docs/#api/math/Vector3">Vector3</a>s인 three.js <a href="https://threejs.org/docs/#api/core/Object3D">Object3D</a> 위치와 크기 속성이
-반환됩니다.
-이러한 개체를 수정하면 실제 엔티티 데이터가 수정된다는 점 유의하십시오.</p>
-<p>그 이유는 A-Frame을 사용하면 <a href="#updating-position-rotation-scale-visible">위치,회전, 크기를 수정할 수 있으며</a>
-<code>.getAttribute</code>가 올바른 데이터를 반환하기 위해 A-Frame이 실제 three.js OBject3D 개체를 반환하기 때문입니다.</p>
-<p>이것은 <code>.getAttribute('회전')</code>의 경우 해당되지 않습니다. A-Frame은 좋든 나쁘든 라이단 대신 도를
-사용하기 때문입니다. 이러한 경우 x/y/z 속성이 있는 일반 JavaScript 개체가 반환됩니다.
-더 낮은 수눚에서 작업해야 하는 경우 <code>el.object3D.회전</code>을 통해 Object3D 오일러를 통해 검색할 수 있습니다.</p>
-<h2><a class="anchor" aria-hidden="true" id="a-frame-장면-그래프-수정"></a><a href="#a-frame-장면-그래프-수정" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A-Frame 장면 그래프 수정</h2>
-<p>JavaScript 및 DOM API를 사용하면 일반 HTML 요소와 마찬가지로 엔티티를
-동적으로 추가 및 제거할 수 있습니다.</p>
-<h3><a class="anchor" aria-hidden="true" id="createelement-사용하여-엔티티-만들기"></a><a href="#createelement-사용하여-엔티티-만들기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.createElement()</code> 사용하여 엔티티 만들기</h3>
-<p>엔티티를 생성하기 위해 <code>document.createElement</code>를 사용할 수 있습니다. 이렇게 하면
-빈 엔티티가 생성이 됩니다:</p>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'a-entity'</span>);
+                  <h3><a class="anchor" aria-hidden="true" id="position-및-scale-검색"></a><a href="#position-및-scale-검색"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>position</code> 및 <code>scale</code> 검색</h3>
+                  <p><code>el.getAttribute('position')</code> 또는 <code>el.getAttribute('scale')</code>를 실행하면
+                    <a href="https://threejs.org/docs/#api/math/Vector3">Vector3</a>s인 three.js <a
+                      href="https://threejs.org/docs/#api/core/Object3D">Object3D</a> 위치와 크기 속성이
+                    반환됩니다.
+                    이러한 개체를 수정하면 실제 엔티티 데이터가 수정된다는 점 유의하십시오.
+                  </p>
+                  <p>그 이유는 A-Frame을 사용하면 <a href="#updating-position-rotation-scale-visible">위치,회전, 크기를 수정할 수 있으며</a>
+                    <code>.getAttribute</code>가 올바른 데이터를 반환하기 위해 A-Frame이 실제 three.js OBject3D 개체를 반환하기 때문입니다.
+                  </p>
+                  <p>이것은 <code>.getAttribute('회전')</code>의 경우 해당되지 않습니다. A-Frame은 좋든 나쁘든 라이단 대신 도를
+                    사용하기 때문입니다. 이러한 경우 x/y/z 속성이 있는 일반 JavaScript 개체가 반환됩니다.
+                    더 낮은 수눚에서 작업해야 하는 경우 <code>el.object3D.회전</code>을 통해 Object3D 오일러를 통해 검색할 수 있습니다.</p>
+                  <h2><a class="anchor" aria-hidden="true" id="a-frame-장면-그래프-수정"></a><a href="#a-frame-장면-그래프-수정"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>A-Frame 장면 그래프 수정</h2>
+                  <p>JavaScript 및 DOM API를 사용하면 일반 HTML 요소와 마찬가지로 엔티티를
+                    동적으로 추가 및 제거할 수 있습니다.</p>
+                  <h3><a class="anchor" aria-hidden="true" id="createelement-사용하여-엔티티-만들기"></a><a
+                      href="#createelement-사용하여-엔티티-만들기" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.createElement()</code> 사용하여 엔티티 만들기</h3>
+                  <p>엔티티를 생성하기 위해 <code>document.createElement</code>를 사용할 수 있습니다. 이렇게 하면
+                    빈 엔티티가 생성이 됩니다:</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'a-entity'</span>);
 </code></pre>
-<p>그러나 이 엔티티는 장면에 연결할 때까지 초기화 되지 않거나 장면에
-포함되지 않습니다.</p>
-<h3><a class="anchor" aria-hidden="true" id="appendchild를-사용하여-엔티티-추가"></a><a href="#appendchild를-사용하여-엔티티-추가" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.appendChild()</code>를 사용하여 엔티티 추가</h3>
-<p>DOM에 엔티티를 추가하려면 <code>.appendChild(element)</code>를 사용합니다. 구체적으로
-장면에 추가를 하고 싶습니다. 장면을 캡쳐하고 엔티티를 만든 다음 해당 엔티티를
-장면에 추가합니다.</p>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> sceneEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-scene'</span>);
+                  <p>그러나 이 엔티티는 장면에 연결할 때까지 초기화 되지 않거나 장면에
+                    포함되지 않습니다.</p>
+                  <h3><a class="anchor" aria-hidden="true" id="appendchild를-사용하여-엔티티-추가"></a><a
+                      href="#appendchild를-사용하여-엔티티-추가" aria-hidden="true" class="hash-link"><svg class="hash-link-icon"
+                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.appendChild()</code>를 사용하여 엔티티 추가</h3>
+                  <p>DOM에 엔티티를 추가하려면 <code>.appendChild(element)</code>를 사용합니다. 구체적으로
+                    장면에 추가를 하고 싶습니다. 장면을 캡쳐하고 엔티티를 만든 다음 해당 엔티티를
+                    장면에 추가합니다.</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> sceneEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-scene'</span>);
 <span class="hljs-keyword">var</span> entityEl = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'a-entity'</span>);
 <span class="hljs-comment">// Do `.setAttribute()`s to initialize the entity.</span>
 sceneEl.appendChild(entityEl);
 </code></pre>
-<p><code>.appendChild()</code>는 브라우저의 <em>비동기</em> 작업입니다. Until
-엔티티가 DOM에 추가되기 전까지 엔티티에 대해 많은 작업을 수행 할 수 없습니다. (예:<code>.getAttribute()</code>를 호출합니다).
-방금 추가된 엔티티에 대한 속성을 쿼리해야 하는 경우 엔티티에서 <code>로드된</code> 이벤트를 수신 하거나
-A-Frame 컴포넌트에 로직을 배치하여 준비가 되면 실행하도록 할 수 있습니다.</p>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> sceneEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-scene'</span>);
+                  <p><code>.appendChild()</code>는 브라우저의 <em>비동기</em> 작업입니다. Until
+                    엔티티가 DOM에 추가되기 전까지 엔티티에 대해 많은 작업을 수행 할 수 없습니다. (예:<code>.getAttribute()</code>를 호출합니다).
+                    방금 추가된 엔티티에 대한 속성을 쿼리해야 하는 경우 엔티티에서 <code>로드된</code> 이벤트를 수신 하거나
+                    A-Frame 컴포넌트에 로직을 배치하여 준비가 되면 실행하도록 할 수 있습니다.</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> sceneEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-scene'</span>);
 
 AFRAME.registerComponent(<span class="hljs-string">'do-something-once-loaded'</span>, {
   <span class="hljs-attr">init</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
@@ -224,62 +432,117 @@ AFRAME.registerComponent(<span class="hljs-string">'do-something-once-loaded'</s
 entityEl.setAttribute(<span class="hljs-string">'do-something-once-loaded'</span>, <span class="hljs-string">''</span>);
 sceneEl.appendChild(entityEl);
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="removechild을-사용하여-엔티티-제거"></a><a href="#removechild을-사용하여-엔티티-제거" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.removeChild()</code>을 사용하여 엔티티 제거</h3>
-<p>DOM과 장면에서 엔티티를 제거하기 위해 부모 요소에서<code>.removeChild(element)</code>를 호출합니다.
-엔티티가 있는 경우 상위(<code>부모 요소</code>)에게 엔티티를 제거 하도록 요청해야 합니다.</p>
-<pre><code class="hljs css language-js">entityEl.parentNode.removeChild(entityEl);
+                  <h3><a class="anchor" aria-hidden="true" id="removechild을-사용하여-엔티티-제거"></a><a
+                      href="#removechild을-사용하여-엔티티-제거" aria-hidden="true" class="hash-link"><svg class="hash-link-icon"
+                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.removeChild()</code>을 사용하여 엔티티 제거</h3>
+                  <p>DOM과 장면에서 엔티티를 제거하기 위해 부모 요소에서<code>.removeChild(element)</code>를 호출합니다.
+                    엔티티가 있는 경우 상위(<code>부모 요소</code>)에게 엔티티를 제거 하도록 요청해야 합니다.</p>
+                  <pre><code class="hljs css language-js">entityEl.parentNode.removeChild(entityEl);
 </code></pre>
-<h2><a class="anchor" aria-hidden="true" id="엔티티-수정"></a><a href="#엔티티-수정" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>엔티티 수정</h2>
-<p>빈 엔티티는 아무 작동도 하지 않습니다. 컴포넌트를 추가하고 컴포넌트 속성을 구성하고
-컴포넌트를 제거하여 엔터티를 수정할 수 있습니다.</p>
-<h3><a class="anchor" aria-hidden="true" id="setattribute을-사용하여-컴포넌트-추가"></a><a href="#setattribute을-사용하여-컴포넌트-추가" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.setAttribute()</code>을 사용하여 컴포넌트 추가</h3>
-<p>컴포넌트를 추가할면 <code>.setAttribute(컴포넌트 이름, 데이터)</code>를 사용합니다. 엔티티에
-지오메트리 컴포넌트를 추가해 보겠습니다.</p>
-<pre><code class="hljs css language-js">entityEl.setAttribute(<span class="hljs-string">'geometry'</span>, {
+                  <h2><a class="anchor" aria-hidden="true" id="엔티티-수정"></a><a href="#엔티티-수정" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>엔티티 수정</h2>
+                  <p>빈 엔티티는 아무 작동도 하지 않습니다. 컴포넌트를 추가하고 컴포넌트 속성을 구성하고
+                    컴포넌트를 제거하여 엔터티를 수정할 수 있습니다.</p>
+                  <h3><a class="anchor" aria-hidden="true" id="setattribute을-사용하여-컴포넌트-추가"></a><a
+                      href="#setattribute을-사용하여-컴포넌트-추가" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.setAttribute()</code>을 사용하여 컴포넌트 추가</h3>
+                  <p>컴포넌트를 추가할면 <code>.setAttribute(컴포넌트 이름, 데이터)</code>를 사용합니다. 엔티티에
+                    지오메트리 컴포넌트를 추가해 보겠습니다.</p>
+                  <pre><code class="hljs css language-js">entityEl.setAttribute(<span class="hljs-string">'geometry'</span>, {
   <span class="hljs-attr">primitive</span>: <span class="hljs-string">'box'</span>,
   <span class="hljs-attr">height</span>: <span class="hljs-number">3</span>,
   <span class="hljs-attr">width</span>: <span class="hljs-number">1</span>
 });
 </code></pre>
-<p>또는 <a href="https://github.com/donmccurdy/aframe-physics-system">커뮤니티 물리 컴포넌트</a>를 추가합니다:</p>
-<pre><code class="hljs css language-js">entityEl.setAttribute(<span class="hljs-string">'dynamic-body'</span>, {
+                  <p>또는 <a href="https://github.com/donmccurdy/aframe-physics-system">커뮤니티 물리 컴포넌트</a>를 추가합니다:</p>
+                  <pre><code class="hljs css language-js">entityEl.setAttribute(<span class="hljs-string">'dynamic-body'</span>, {
   <span class="hljs-attr">shape</span>: <span class="hljs-string">'box'</span>,
   <span class="hljs-attr">mass</span>: <span class="hljs-number">1.5</span>,
   <span class="hljs-attr">linearDamping</span>: <span class="hljs-number">0.005</span>
 });
 </code></pre>
-<p>일반 HTML <code>.setAttribute()</code>과 달리 <code>.setAttribute()</code>는 개체와 같은 다양한 유형의
-인수를 취하거나 컴포넌트의 단일 속성을 업데이트 할 수 있도록 개선되었습니다.
-<a href="../core/entity.md#setattribute-attr-value-componentattrvalue"><code>Entity.setAttribute()</code>에 대해 자세히 읽어보세요</a>.</p>
-<h3><a class="anchor" aria-hidden="true" id="setattribute로-컴포넌트-업데이트"></a><a href="#setattribute로-컴포넌트-업데이트" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.setAttribute()</code>로 컴포넌트 업데이트</h3>
-<p>컴포넌트를 업데이트 하기 위해서 <code>.setAttribute()</code>도 사용합니다. 컴포넌트
-업데이트는 여러 형태를 취합니다.</p>
-<h4><a class="anchor" aria-hidden="true" id="단일-속성-컴포넌트의--속성-업데이트"></a><a href="#단일-속성-컴포넌트의--속성-업데이트" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>단일 속성 컴포넌트의  속성 업데이트</h4>
-<p>단일 속성 컴포넌트인 <a href="../components/position.md">위치 컴포넌트</a>의 속성을 업데이트 해보겠습니다.
-객체나 문자열을 전달 할 수 있습니다. A-Frame이 문자열을 구문 분석할 필요가 없도록
-개체를 전달하는 것이 약간 선호됩니다.</p>
-<pre><code class="hljs css language-js">entityEl.setAttribute(<span class="hljs-string">'position'</span>, {<span class="hljs-attr">x</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">-3</span>});
+                  <p>일반 HTML <code>.setAttribute()</code>과 달리 <code>.setAttribute()</code>는 개체와 같은 다양한 유형의
+                    인수를 취하거나 컴포넌트의 단일 속성을 업데이트 할 수 있도록 개선되었습니다.
+                    <a href="../core/entity.md#setattribute-attr-value-componentattrvalue"><code>Entity.setAttribute()</code>에
+                      대해 자세히 읽어보세요</a>.
+                  </p>
+                  <h3><a class="anchor" aria-hidden="true" id="setattribute로-컴포넌트-업데이트"></a><a
+                      href="#setattribute로-컴포넌트-업데이트" aria-hidden="true" class="hash-link"><svg class="hash-link-icon"
+                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.setAttribute()</code>로 컴포넌트 업데이트</h3>
+                  <p>컴포넌트를 업데이트 하기 위해서 <code>.setAttribute()</code>도 사용합니다. 컴포넌트
+                    업데이트는 여러 형태를 취합니다.</p>
+                  <h4><a class="anchor" aria-hidden="true" id="단일-속성-컴포넌트의--속성-업데이트"></a><a href="#단일-속성-컴포넌트의--속성-업데이트"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>단일 속성 컴포넌트의 속성 업데이트</h4>
+                  <p>단일 속성 컴포넌트인 <a href="../components/position.md">위치 컴포넌트</a>의 속성을 업데이트 해보겠습니다.
+                    객체나 문자열을 전달 할 수 있습니다. A-Frame이 문자열을 구문 분석할 필요가 없도록
+                    개체를 전달하는 것이 약간 선호됩니다.</p>
+                  <pre><code class="hljs css language-js">entityEl.setAttribute(<span class="hljs-string">'position'</span>, {<span class="hljs-attr">x</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">z</span>: <span class="hljs-number">-3</span>});
 <span class="hljs-comment">// Read on to see why `entityEl.object3D.position.set(1, 2, -3)` is preferred though.</span>
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="다중-속성의-컴포넌트의-단일-속성-업데이트"></a><a href="#다중-속성의-컴포넌트의-단일-속성-업데이트" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>다중 속성의 컴포넌트의 단일 속성 업데이트</h4>
-<p>다중 속성 컴포넌트 인<a href="../components/material.md">material 컴포넌트</a>의 단일 속성을 업데이트 해보겠습니다.
-컴포넌트 이름, 속성 이름 및 속성 값을 <code>.setAttribute()</code>에 제공하여 이를 수행합니다:</p>
-<pre><code class="hljs css language-js">entityEl.setAttribute(<span class="hljs-string">'material'</span>, <span class="hljs-string">'color'</span>, <span class="hljs-string">'red'</span>);
+                  <h4><a class="anchor" aria-hidden="true" id="다중-속성의-컴포넌트의-단일-속성-업데이트"></a><a
+                      href="#다중-속성의-컴포넌트의-단일-속성-업데이트" aria-hidden="true" class="hash-link"><svg class="hash-link-icon"
+                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>다중 속성의 컴포넌트의 단일 속성 업데이트</h4>
+                  <p>다중 속성 컴포넌트 인<a href="../components/material.md">material 컴포넌트</a>의 단일 속성을 업데이트 해보겠습니다.
+                    컴포넌트 이름, 속성 이름 및 속성 값을 <code>.setAttribute()</code>에 제공하여 이를 수행합니다:</p>
+                  <pre><code class="hljs css language-js">entityEl.setAttribute(<span class="hljs-string">'material'</span>, <span class="hljs-string">'color'</span>, <span class="hljs-string">'red'</span>);
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="다궁-속성-컴포넌트의-여러-속성-업데이트"></a><a href="#다궁-속성-컴포넌트의-여러-속성-업데이트" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>다궁 속성 컴포넌트의 여러 속성 업데이트</h4>
-<p>다중 컴포넌트인 <a href="../components/material.md">light 컴포넌트</a>의 여러 속성을 한 번에 업데이트 하겠습니다.
-컴포넌트 이름과 속성 개체를 <code>.setAttribute()</code>에 제공하여 이 작업을 수행합니다.
-조명의 색상과 명암은 변경하되 타입은 동일하게 유지합니다.</p>
-<pre><code class="hljs css language-js"><span class="hljs-comment">// &lt;a-entity light="type: directional; color: #CAC; intensity: 0.5"&gt;&lt;/a-entity&gt;</span>
+                  <h4><a class="anchor" aria-hidden="true" id="다궁-속성-컴포넌트의-여러-속성-업데이트"></a><a
+                      href="#다궁-속성-컴포넌트의-여러-속성-업데이트" aria-hidden="true" class="hash-link"><svg class="hash-link-icon"
+                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>다궁 속성 컴포넌트의 여러 속성 업데이트</h4>
+                  <p>다중 컴포넌트인 <a href="../components/material.md">light 컴포넌트</a>의 여러 속성을 한 번에 업데이트 하겠습니다.
+                    컴포넌트 이름과 속성 개체를 <code>.setAttribute()</code>에 제공하여 이 작업을 수행합니다.
+                    조명의 색상과 명암은 변경하되 타입은 동일하게 유지합니다.</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-comment">// &lt;a-entity light="type: directional; color: #CAC; intensity: 0.5"&gt;&lt;/a-entity&gt;</span>
 entityEl.setAttribute(<span class="hljs-string">'light'</span>, {<span class="hljs-attr">color</span>: <span class="hljs-string">'#ACC'</span>, <span class="hljs-attr">intensity</span>: <span class="hljs-number">0.75</span>});
 <span class="hljs-comment">// &lt;a-entity light="type: directional; color: #ACC; intensity: 0.75"&gt;&lt;/a-entity&gt;</span>
 </code></pre>
-<h4><a class="anchor" aria-hidden="true" id="position-rotation-scale-및-visible-업데이트"></a><a href="#position-rotation-scale-및-visible-업데이트" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>position</code>, <code>rotation</code>, <code>scale</code>, 및 <code>visible</code> 업데이트.</h4>
-<p>유틸리티에 대한 더 나은 성능, 메모리 및 접근을 위한 특별한 경우로서
-<code>.setAttribute</code>를 경유하지 않고 엔티티의 <a href="https://threejs.org/docs/#api/core/Object3D">Object3D</a>를 통해
-<code>position</code>, <code>rotation</code>, <code>scale</code>, 및 <code>visible</code> 표시 상태를 직접
-수정하는 것을 권장합니다:</p>
-<pre><code class="hljs css language-js"><span class="hljs-comment">// Examples for position.</span>
+                  <h4><a class="anchor" aria-hidden="true" id="position-rotation-scale-및-visible-업데이트"></a><a
+                      href="#position-rotation-scale-및-visible-업데이트" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>position</code>, <code>rotation</code>, <code>scale</code>, 및 <code>visible</code>
+                    업데이트.</h4>
+                  <p>유틸리티에 대한 더 나은 성능, 메모리 및 접근을 위한 특별한 경우로서
+                    <code>.setAttribute</code>를 경유하지 않고 엔티티의 <a
+                      href="https://threejs.org/docs/#api/core/Object3D">Object3D</a>를 통해
+                    <code>position</code>, <code>rotation</code>, <code>scale</code>, 및 <code>visible</code> 표시 상태를 직접
+                    수정하는 것을 권장합니다:
+                  </p>
+                  <pre><code class="hljs css language-js"><span class="hljs-comment">// Examples for position.</span>
 entityEl.object3D.position.set(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
 entityEl.object3D.position.x += <span class="hljs-number">5</span>;
 entityEl.object3D.position.multiplyScalar(<span class="hljs-number">5</span>);
@@ -296,56 +559,99 @@ entityEl.object3D.scale.z += <span class="hljs-number">1.5</span>;
 entityEl.object3D.visible = <span class="hljs-literal">false</span>;
 entityEl.object3D.visible = <span class="hljs-literal">true</span>;
 </code></pre>
-<p>이렇게 하면<code>.setAttribute</code> 오버헤드를 건너뛰고 대신 가장 일반적으로 업데이트 되는 컴포넌트의 속성을
-간단하게 설정 할 수 있습니다.
-<code>entityEl.getAttribute('position');</code>를 수정할 때 three.js
-수준의 업데이트는 계속 반영됩니다.</p>
-<h4><a class="anchor" aria-hidden="true" id="다중-특성-컴포넌트의-속성-바꾸기"></a><a href="#다중-특성-컴포넌트의-속성-바꾸기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>다중 특성 컴포넌트의 속성 바꾸기</h4>
-<p>다중 특성 컴포넌트인 <a href="../components/geometry.md">geometry 컴포넌트</a>의 모든 속성을
-교체해 보겠습니다. 컴포넌트 이름, <code>.setAttribute()</code>에 속성 개체 및 기존 속성을 방해하도록 지정하는
-플래그를 제공하여 이를 수행합니다. geometry의 모든 기존 속성을 새 속성으로 바꿉니다:</p>
-<pre><code class="hljs css language-js"><span class="hljs-comment">// &lt;a-entity geometry="primitive: cylinder; height: 4; radius: 2"&gt;&lt;/a-entity&gt;</span>
+                  <p>이렇게 하면<code>.setAttribute</code> 오버헤드를 건너뛰고 대신 가장 일반적으로 업데이트 되는 컴포넌트의 속성을
+                    간단하게 설정 할 수 있습니다.
+                    <code>entityEl.getAttribute('position');</code>를 수정할 때 three.js
+                    수준의 업데이트는 계속 반영됩니다.
+                  </p>
+                  <h4><a class="anchor" aria-hidden="true" id="다중-특성-컴포넌트의-속성-바꾸기"></a><a href="#다중-특성-컴포넌트의-속성-바꾸기"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>다중 특성 컴포넌트의 속성 바꾸기</h4>
+                  <p>다중 특성 컴포넌트인 <a href="../components/geometry.md">geometry 컴포넌트</a>의 모든 속성을
+                    교체해 보겠습니다. 컴포넌트 이름, <code>.setAttribute()</code>에 속성 개체 및 기존 속성을 방해하도록 지정하는
+                    플래그를 제공하여 이를 수행합니다. geometry의 모든 기존 속성을 새 속성으로 바꿉니다:</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-comment">// &lt;a-entity geometry="primitive: cylinder; height: 4; radius: 2"&gt;&lt;/a-entity&gt;</span>
 entityEl.setAttribute(<span class="hljs-string">'geometry'</span>, {<span class="hljs-attr">primitive</span>: <span class="hljs-string">'torusKnot'</span>, <span class="hljs-attr">p</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">q</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">radiusTubular</span>: <span class="hljs-number">4</span>}, <span class="hljs-literal">true</span>);
 <span class="hljs-comment">// &lt;a-entity geometry="primitive: torusKnot; p: 1; q: 3; radiusTubular: 4"&gt;&lt;/a-entity&gt;</span>
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="removeattribute을-사용하여-컴포넌트-제거"></a><a href="#removeattribute을-사용하여-컴포넌트-제거" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.removeAttribute()</code>을 사용하여 컴포넌트 제거</h3>
-<p>엔티티에서 컴포넌트소를 제거하느라 분리하기 위해
-<code>.removeAttribute(컴포넌트이름)</code>를 사용할 수 있습니다.
-카메라 엔티티에서 <code>wasd-controls</code>을 제거해 보겠습니다.</p>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> cameraEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'[camera]'</span>);
+                  <h3><a class="anchor" aria-hidden="true" id="removeattribute을-사용하여-컴포넌트-제거"></a><a
+                      href="#removeattribute을-사용하여-컴포넌트-제거" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.removeAttribute()</code>을 사용하여 컴포넌트 제거</h3>
+                  <p>엔티티에서 컴포넌트소를 제거하느라 분리하기 위해
+                    <code>.removeAttribute(컴포넌트이름)</code>를 사용할 수 있습니다.
+                    카메라 엔티티에서 <code>wasd-controls</code>을 제거해 보겠습니다.
+                  </p>
+                  <pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> cameraEl = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'[camera]'</span>);
 cameraEl.removeAttribute(<span class="hljs-string">'wasd-controls'</span>);
 </code></pre>
-<h2><a class="anchor" aria-hidden="true" id="이벤트-및-이벤트-리스너"></a><a href="#이벤트-및-이벤트-리스너" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>이벤트 및 이벤트 리스너</h2>
-<p>JavaScript와 DOM을 사용하면 엔터티와 컴포넌트소가 서로 통신할 수 있는 쉬운 방법이 있습니다.
-바로 이벤트와 이벤트 리스너입니다. 이벤트는 다른 코드가 수신하여 응답할 수 있는
-신호를 보내는 방법입니다. <a href="http://javascript.info/tutorial/introduction-browser-events">브라우저 이벤트에 대해 자세히 알아보세요</a>.</p>
-<h3><a class="anchor" aria-hidden="true" id="emit로-이벤트-발생"></a><a href="#emit로-이벤트-발생" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.emit()</code>로 이벤트 발생</h3>
-<p>A-Frame 요소는 <code>.emit(eventName, eventDetail, bubbles)</code>를 통해 사용자 지정 이벤트를
-쉽게 내보낼 수 있습니다. 예를 들어, 물리 컴포넌트를 만들고 있는데 다른 컴포넌트와
-충돌했을 때 엔티티가 신호를 보내길 원한다고 가정해 보겠습니다.</p>
-<pre><code class="hljs css language-js">entityEl.emit(<span class="hljs-string">'physicscollided'</span>, {<span class="hljs-attr">collidingEntity</span>: anotherEntityEl}, <span class="hljs-literal">false</span>);
+                  <h2><a class="anchor" aria-hidden="true" id="이벤트-및-이벤트-리스너"></a><a href="#이벤트-및-이벤트-리스너"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>이벤트 및 이벤트 리스너</h2>
+                  <p>JavaScript와 DOM을 사용하면 엔터티와 컴포넌트소가 서로 통신할 수 있는 쉬운 방법이 있습니다.
+                    바로 이벤트와 이벤트 리스너입니다. 이벤트는 다른 코드가 수신하여 응답할 수 있는
+                    신호를 보내는 방법입니다. <a href="http://javascript.info/tutorial/introduction-browser-events">브라우저 이벤트에 대해
+                      자세히 알아보세요</a>.</p>
+                  <h3><a class="anchor" aria-hidden="true" id="emit로-이벤트-발생"></a><a href="#emit로-이벤트-발생"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.emit()</code>로 이벤트 발생</h3>
+                  <p>A-Frame 요소는 <code>.emit(eventName, eventDetail, bubbles)</code>를 통해 사용자 지정 이벤트를
+                    쉽게 내보낼 수 있습니다. 예를 들어, 물리 컴포넌트를 만들고 있는데 다른 컴포넌트와
+                    충돌했을 때 엔티티가 신호를 보내길 원한다고 가정해 보겠습니다.</p>
+                  <pre><code class="hljs css language-js">entityEl.emit(<span class="hljs-string">'physicscollided'</span>, {<span class="hljs-attr">collidingEntity</span>: anotherEntityEl}, <span class="hljs-literal">false</span>);
 </code></pre>
-<p>그러면 코드의 다른 부분이 이 이벤트를 기다리고 수신 대기하고 응답에 따라
-코드를 실행 할 수 있습니다. 두 번째 인수로 이벤트 세부 정보를 통해
-정보와 데이터를 전달 할 수 있습니다. 또한 이벤트 <em>bubbles</em>를 지정하여 상위 엔티티도
-이벤트를 내보낼지 여부를 지정할 수 있습니다. 따라서 코드의 다른 부분은
-이벤트 리스너를 등록할 수 있습니다.</p>
-<h3><a class="anchor" aria-hidden="true" id="addeventlistener를-사용하여-이벤트-리스너-추가"></a><a href="#addeventlistener를-사용하여-이벤트-리스너-추가" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.addEventListener()</code>를 사용하여 이벤트 리스너 추가</h3>
-<p>일반 HTML 요소와 마찬가지로 이벤트 리스너를 <code>.addEventListener(eventName, function)</code>에
-등록할 수 있습니다. 리스너가 등록된 이벤트가 발생하면 함수가 호출되어 이벤트를 처리합니다.
-예를 들어, 물리 충돌 이벤트로 이전 예제부터 계속하면 다음과 같습니다:</p>
-<pre><code class="hljs css language-js">entityEl.addEventListener(<span class="hljs-string">'physicscollided'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
+                  <p>그러면 코드의 다른 부분이 이 이벤트를 기다리고 수신 대기하고 응답에 따라
+                    코드를 실행 할 수 있습니다. 두 번째 인수로 이벤트 세부 정보를 통해
+                    정보와 데이터를 전달 할 수 있습니다. 또한 이벤트 <em>bubbles</em>를 지정하여 상위 엔티티도
+                    이벤트를 내보낼지 여부를 지정할 수 있습니다. 따라서 코드의 다른 부분은
+                    이벤트 리스너를 등록할 수 있습니다.</p>
+                  <h3><a class="anchor" aria-hidden="true" id="addeventlistener를-사용하여-이벤트-리스너-추가"></a><a
+                      href="#addeventlistener를-사용하여-이벤트-리스너-추가" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.addEventListener()</code>를 사용하여 이벤트 리스너 추가</h3>
+                  <p>일반 HTML 요소와 마찬가지로 이벤트 리스너를 <code>.addEventListener(eventName, function)</code>에
+                    등록할 수 있습니다. 리스너가 등록된 이벤트가 발생하면 함수가 호출되어 이벤트를 처리합니다.
+                    예를 들어, 물리 충돌 이벤트로 이전 예제부터 계속하면 다음과 같습니다:</p>
+                  <pre><code class="hljs css language-js">entityEl.addEventListener(<span class="hljs-string">'physicscollided'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Entity collided with'</span>, event.detail.collidingEntity);
 });
 </code></pre>
-<p>엔티티가 <code>physicscollided</code> 이벤트를 내 보내면 이벤트 개체와 함께 함수가 호출됩니다.
-특히 이벤트 개체에는 이벤트를 통해 전달된 데이터와 정보가 포함된 이벤트 세부 정보가 있습니다.</p>
-<h3><a class="anchor" aria-hidden="true" id="removeeventlistener를-사용하여-이벤트-수신기-제거"></a><a href="#removeeventlistener를-사용하여-이벤트-수신기-제거" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.removeEventListener()</code>를 사용하여 이벤트 수신기 제거</h3>
-<p>일반 HTML 요소와 마찬가지로 이벤트 수신기를 제거 하려면
-<code>.removeEventListener(eventName, function)</code>를 사용합니다.
-사용자가 등록한 것과 동일한 이벤트 이름과 함수를 전달해야 합니다.<br>
-예를 들어, 물리 충돌 이벤트로 이전 예제부터 계속하면 다음과 같습니다:</p>
-<pre><code class="hljs css language-js"><span class="hljs-comment">// We have to define this function with a name if we later remove it.</span>
+                  <p>엔티티가 <code>physicscollided</code> 이벤트를 내 보내면 이벤트 개체와 함께 함수가 호출됩니다.
+                    특히 이벤트 개체에는 이벤트를 통해 전달된 데이터와 정보가 포함된 이벤트 세부 정보가 있습니다.</p>
+                  <h3><a class="anchor" aria-hidden="true" id="removeeventlistener를-사용하여-이벤트-수신기-제거"></a><a
+                      href="#removeeventlistener를-사용하여-이벤트-수신기-제거" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.removeEventListener()</code>를 사용하여 이벤트 수신기 제거</h3>
+                  <p>일반 HTML 요소와 마찬가지로 이벤트 수신기를 제거 하려면
+                    <code>.removeEventListener(eventName, function)</code>를 사용합니다.
+                    사용자가 등록한 것과 동일한 이벤트 이름과 함수를 전달해야 합니다.<br>
+                    예를 들어, 물리 충돌 이벤트로 이전 예제부터 계속하면 다음과 같습니다:
+                  </p>
+                  <pre><code class="hljs css language-js"><span class="hljs-comment">// We have to define this function with a name if we later remove it.</span>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">collisionHandler</span> (<span class="hljs-params">event</span>) </span>{
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Entity collided with'</span>, event.detail.collidingEntity);
 }
@@ -353,9 +659,99 @@ cameraEl.removeAttribute(<span class="hljs-string">'wasd-controls'</span>);
 entityEl.addEventListener(<span class="hljs-string">'physicscollided'</span>, collisionHandler);
 entityEl.removeEventListener(<span class="hljs-string">'physicscollided'</span>, collisionHandler);
 </code></pre>
-<h2><a class="anchor" aria-hidden="true" id="주의-사항"></a><a href="#주의-사항" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>주의 사항</h2>
-<p>A-Frame 엔티티 및 프리미티브는 일부 HTML API가 예상대로 작동하지 않을 수 있도록
-<a href="/docs/aframe-docs/docs/doc4#why-is-the-html-not-updating-when-i-check-the-browser-inspector">성능을 향상</a> 시키는 방식으로 구현 됩니다.
-예를 들어 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">값을 포함하는 속성 선택기는</a> 작동하지 않으며 개체의 컴포넌트가
-변경될 때<a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver">mutation observer</a>는 변경을 트리거 하지 않습니다.</p>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/aframe-docs/docs/doc9"><span class="arrow-prev">← </span><span>상호 작용 및 컨트롤러</span></a><a class="docs-next button" href="/docs/aframe-docs/docs/doc11"><span>3D 모델</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#a-frame용-javascript-코드를-배치할-위치">A-Frame용 JavaScript 코드를 배치할 위치</a></li><li><a href="#querying-및-traversing을-통해-엔티티-가져오기">Querying 및 Traversing을 통해 엔티티 가져오기</a><ul class="toc-headings"><li><a href="#queryselector-사용"><code>.querySelector()</code> 사용</a></li><li><a href="#queryselectorall-사용"><code>.querySelectorAll()</code> 사용</a></li><li><a href="#queryselectorall를-사용하여-엔티티를-반복하기"><code>.querySelectorAll()</code>를 사용하여 엔티티를 반복하기</a></li></ul></li><li><a href="#retrieving-component-data-with-getattribute">Retrieving Component Data with <code>.getAttribute()</code></a><ul class="toc-headings"><li><a href="#position-및-scale-검색"><code>position</code> 및 <code>scale</code> 검색</a></li></ul></li><li><a href="#a-frame-장면-그래프-수정">A-Frame 장면 그래프 수정</a><ul class="toc-headings"><li><a href="#createelement-사용하여-엔티티-만들기"><code>.createElement()</code> 사용하여 엔티티 만들기</a></li><li><a href="#appendchild를-사용하여-엔티티-추가"><code>.appendChild()</code>를 사용하여 엔티티 추가</a></li><li><a href="#removechild을-사용하여-엔티티-제거"><code>.removeChild()</code>을 사용하여 엔티티 제거</a></li></ul></li><li><a href="#엔티티-수정">엔티티 수정</a><ul class="toc-headings"><li><a href="#setattribute을-사용하여-컴포넌트-추가"><code>.setAttribute()</code>을 사용하여 컴포넌트 추가</a></li><li><a href="#setattribute로-컴포넌트-업데이트"><code>.setAttribute()</code>로 컴포넌트 업데이트</a></li><li><a href="#removeattribute을-사용하여-컴포넌트-제거"><code>.removeAttribute()</code>을 사용하여 컴포넌트 제거</a></li></ul></li><li><a href="#이벤트-및-이벤트-리스너">이벤트 및 이벤트 리스너</a><ul class="toc-headings"><li><a href="#emit로-이벤트-발생"><code>.emit()</code>로 이벤트 발생</a></li><li><a href="#addeventlistener를-사용하여-이벤트-리스너-추가"><code>.addEventListener()</code>를 사용하여 이벤트 리스너 추가</a></li><li><a href="#removeeventlistener를-사용하여-이벤트-수신기-제거"><code>.removeEventListener()</code>를 사용하여 이벤트 수신기 제거</a></li></ul></li><li><a href="#주의-사항">주의 사항</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docs/aframe-docs/" class="nav-home"><img src="/docs/aframe-docs/img/favicon.ico" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/aframe-docs/docs/doc1.html">Getting Started (or other categories)</a><a href="/docs/aframe-docs/docs/doc2.html">Guides (or other categories)</a><a href="/docs/aframe-docs/docs/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/docs/aframe-docs/users">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/docs/aframe-docs/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docs/aframe-docs/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2021 Your Name or Your Company Name</section></footer></div></body></html>
+                  <h2><a class="anchor" aria-hidden="true" id="주의-사항"></a><a href="#주의-사항" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>주의 사항</h2>
+                  <p>A-Frame 엔티티 및 프리미티브는 일부 HTML API가 예상대로 작동하지 않을 수 있도록
+                    <a
+                      href="/docs/aframe-docs/docs/doc4#why-is-the-html-not-updating-when-i-check-the-browser-inspector">성능을
+                      향상</a> 시키는 방식으로 구현 됩니다.
+                    예를 들어 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">값을 포함하는 속성
+                      선택기는</a> 작동하지 않으며 개체의 컴포넌트가
+                    변경될 때<a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver">mutation
+                      observer</a>는 변경을 트리거 하지 않습니다.
+                  </p>
+                </span></div>
+            </article>
+          </div>
+          <div class="docs-prevnext"><a class="docs-prev button" href="/docs/aframe-docs/docs/doc9.html"><span
+                class="arrow-prev">← </span><span>상호 작용 및 컨트롤러</span></a><a class="docs-next button"
+              href="/docs/aframe-docs/docs/doc11.html"><span>3D 모델</span><span class="arrow-next"> →</span></a></div>
+        </div>
+      </div>
+      <nav class="onPageNav">
+        <ul class="toc-headings">
+          <li><a href="#a-frame용-javascript-코드를-배치할-위치">A-Frame용 JavaScript 코드를 배치할 위치</a></li>
+          <li><a href="#querying-및-traversing을-통해-엔티티-가져오기">Querying 및 Traversing을 통해 엔티티 가져오기</a>
+            <ul class="toc-headings">
+              <li><a href="#queryselector-사용"><code>.querySelector()</code> 사용</a></li>
+              <li><a href="#queryselectorall-사용"><code>.querySelectorAll()</code> 사용</a></li>
+              <li><a href="#queryselectorall를-사용하여-엔티티를-반복하기"><code>.querySelectorAll()</code>를 사용하여 엔티티를 반복하기</a></li>
+            </ul>
+          </li>
+          <li><a href="#retrieving-component-data-with-getattribute">Retrieving Component Data with
+              <code>.getAttribute()</code></a>
+            <ul class="toc-headings">
+              <li><a href="#position-및-scale-검색"><code>position</code> 및 <code>scale</code> 검색</a></li>
+            </ul>
+          </li>
+          <li><a href="#a-frame-장면-그래프-수정">A-Frame 장면 그래프 수정</a>
+            <ul class="toc-headings">
+              <li><a href="#createelement-사용하여-엔티티-만들기"><code>.createElement()</code> 사용하여 엔티티 만들기</a></li>
+              <li><a href="#appendchild를-사용하여-엔티티-추가"><code>.appendChild()</code>를 사용하여 엔티티 추가</a></li>
+              <li><a href="#removechild을-사용하여-엔티티-제거"><code>.removeChild()</code>을 사용하여 엔티티 제거</a></li>
+            </ul>
+          </li>
+          <li><a href="#엔티티-수정">엔티티 수정</a>
+            <ul class="toc-headings">
+              <li><a href="#setattribute을-사용하여-컴포넌트-추가"><code>.setAttribute()</code>을 사용하여 컴포넌트 추가</a></li>
+              <li><a href="#setattribute로-컴포넌트-업데이트"><code>.setAttribute()</code>로 컴포넌트 업데이트</a></li>
+              <li><a href="#removeattribute을-사용하여-컴포넌트-제거"><code>.removeAttribute()</code>을 사용하여 컴포넌트 제거</a></li>
+            </ul>
+          </li>
+          <li><a href="#이벤트-및-이벤트-리스너">이벤트 및 이벤트 리스너</a>
+            <ul class="toc-headings">
+              <li><a href="#emit로-이벤트-발생"><code>.emit()</code>로 이벤트 발생</a></li>
+              <li><a href="#addeventlistener를-사용하여-이벤트-리스너-추가"><code>.addEventListener()</code>를 사용하여 이벤트 리스너 추가</a>
+              </li>
+              <li><a href="#removeeventlistener를-사용하여-이벤트-수신기-제거"><code>.removeEventListener()</code>를 사용하여 이벤트 수신기
+                  제거</a></li>
+            </ul>
+          </li>
+          <li><a href="#주의-사항">주의 사항</a></li>
+        </ul>
+      </nav>
+    </div>
+    <footer class="nav-footer" id="footer">
+      <section class="sitemap"><a href="/docs/aframe-docs/" class="nav-home"><img
+            src="/docs/aframe-docs/img/favicon.ico" width="66" height="58" /></a>
+        <div>
+          <h5>Docs</h5><a href="/docs/aframe-docs/docs/doc1.html">Getting Started (or other categories)</a><a
+            href="/docs/aframe-docs/docs/doc2.html">Guides (or other categories)</a><a
+            href="/docs/aframe-docs/docs/doc3.html">API Reference (or other categories)</a>
+        </div>
+        <div>
+          <h5>Community</h5><a href="/docs/aframe-docs/users">User Showcase</a><a
+            href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack
+            Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank"
+            rel="noreferrer noopener">Twitter</a>
+        </div>
+        <div>
+          <h5>More</h5><a href="/docs/aframe-docs/blog">Blog</a><a href="https://github.com/">GitHub</a><a
+            class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers"
+            data-show-count="true" data-count-aria-label="# stargazers on GitHub"
+            aria-label="Star this project on GitHub">Star</a>
+        </div>
+      </section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener"
+        class="fbOpenSource"><img src="/docs/aframe-docs/img/oss_logo.png" alt="Facebook Open Source" width="170"
+          height="45" /></a>
+      <section class="copyright">Copyright © 2021 Your Name or Your Company Name</section>
+    </footer>
+  </div>
+</body>
+
+</html>

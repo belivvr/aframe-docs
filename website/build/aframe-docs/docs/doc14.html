@@ -1,11 +1,116 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>구성 요소 작성 · undefined</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="[component]: ../core/component.md"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="구성 요소 작성 · undefined"/><meta property="og:type" content="website"/><meta property="og:url" content="https://aframe.belivvr.com/docs/aframe-docs/"/><meta property="og:description" content="[component]: ../core/component.md"/><meta property="og:image" content="https://aframe.belivvr.com/docs/aframe-docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://aframe.belivvr.com/docs/aframe-docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docs/aframe-docs/img/AFRAME_LOGO_TMP.webp"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://aframe.belivvr.com/docs/aframe-docs/blog/atom.xml" title="undefined Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://aframe.belivvr.com/docs/aframe-docs/blog/feed.xml" title="undefined Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docs/aframe-docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/docs/aframe-docs/css/main.css"/><script src="/docs/aframe-docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="https://developers.belivvr.com/"><img class="logo" src="/docs/aframe-docs/img/AFRAME_LOGO_TMP.webp"/><h2 class="headerTitleWithLogo"></h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/aframe-docs/docs/doc1" target="_self">Docs</a></li><li class=""><a href="https://github.com/belivvr/aframe-docs" target="_self">Github</a></li><li class=""><a href="/docs/aframe-docs/docs/doc4" target="_self">API</a></li><li class=""><a href="/docs/aframe-docs/help" target="_self">Help</a></li><li class=""><a href="/docs/aframe-docs/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Introduction</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc1">Best Practices</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc6">HTML 및 Primitives</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc7">Introduction</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc8">설치</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc9">상호 작용 및 컨트롤러</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc10">JavaScript, Events, DOM APIs</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc11">3D 모델</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc12">비주얼 인스펙터 및 개발 도구</a></li><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc13">VR 헤드셋 및 WebVR 브라우저</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/aframe-docs/docs/doc14">구성 요소 작성</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guide</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc2">three.js로 개발하기</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Core API</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc3">엔티티 컴포넌트 시스템</a></li></ul></div></div></section></div><script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>구성 요소 작성 · undefined</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Docusaurus" />
+  <meta name="description" content="[component]: ../core/component.md" />
+  <meta name="docsearch:language" content="en" />
+  <meta property="og:title" content="구성 요소 작성 · undefined" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aframe.belivvr.com/docs/aframe-docs/" />
+  <meta property="og:description" content="[component]: ../core/component.md" />
+  <meta property="og:image" content="https://aframe.belivvr.com/docs/aframe-docs/img/undraw_online.svg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://aframe.belivvr.com/docs/aframe-docs/img/undraw_tweetstorm.svg" />
+  <link rel="shortcut icon" href="/docs/aframe-docs/img/AFRAME_LOGO_TMP.webp" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+  <link rel="alternate" type="application/atom+xml" href="https://aframe.belivvr.com/docs/aframe-docs/blog/atom.xml"
+    title="undefined Blog ATOM Feed" />
+  <link rel="alternate" type="application/rss+xml" href="https://aframe.belivvr.com/docs/aframe-docs/blog/feed.xml"
+    title="undefined Blog RSS Feed" />
+  <script type="text/javascript" src="https://buttons.github.io/buttons.js"></script>
+  <script src="/docs/aframe-docs/js/scrollSpy.js"></script>
+  <link rel="stylesheet" href="/docs/aframe-docs/css/main.css" />
+  <script src="/docs/aframe-docs/js/codetabs.js"></script>
+</head>
+
+<body class="sideNavVisible separateOnPageNav">
+  <div class="fixedHeaderContainer">
+    <div class="headerWrapper wrapper">
+      <header><a href="/docs/aframe-docs/"><img class="logo" src="/docs/aframe-docs/img/AFRAME_LOGO_TMP.webp" />
+          <h2 class="headerTitleWithLogo"></h2>
+        </a>
+        <div class="navigationWrapper navigationSlider">
+          <nav class="slidingNav">
+            <ul class="nav-site nav-site-internal">
+              <li class="siteNavGroupActive"><a href="/docs/aframe-docs/docs/doc1.html" target="_self">Docs</a></li>
+              <li class=""><a href="https://github.com/belivvr/aframe-docs" target="_self">Github</a></li>
+              <li class=""><a href="/docs/aframe-docs/docs/doc4.html" target="_self">API</a></li>
+              <li class=""><a href="/docs/aframe-docs/help.html" target="_self">Help</a></li>
+              <li class=""><a href="/docs/aframe-docs/blog/" target="_self">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div class="navPusher">
+    <div class="docMainWrapper wrapper">
+      <div class="docsNavContainer" id="docsNav">
+        <nav class="toc">
+          <div class="toggleNav">
+            <section class="navWrapper wrapper">
+              <div class="navBreadcrumb wrapper">
+                <div class="navToggle" id="navToggler">
+                  <div class="hamburger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+                </div>
+                <h2><i>›</i><span>Introduction</span></h2>
+                <div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div>
+              </div>
+              <div class="navGroups">
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">Introduction</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc1.html">Best Practices</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc6.html">HTML 및 Primitives</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc7.html">Introduction</a></li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc8.html">설치</a></li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc9.html">상호 작용 및 컨트롤러</a></li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc10.html">JavaScript, Events,
+                        DOM APIs</a></li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc11.html">3D 모델</a></li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc12.html">비주얼 인스펙터 및 개발 도구</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc13.html">VR 헤드셋 및 WebVR
+                        브라우저</a></li>
+                    <li class="navListItem navListItemActive"><a class="navItem" href="/docs/aframe-docs/docs/doc14.html">구성
+                        요소 작성</a></li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">Guide</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc2.html">three.js로 개발하기</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">Core API</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="/docs/aframe-docs/docs/doc3.html">엔티티 컴포넌트 시스템</a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <script>
             var coll = document.getElementsByClassName('collapsible');
             var checkActiveCategory = true;
             for (var i = 0; i < coll.length; i++) {
               var links = coll[i].nextElementSibling.getElementsByTagName('*');
-              if (checkActiveCategory){
+              if (checkActiveCategory) {
                 for (var j = 0; j < links.length; j++) {
-                  if (links[j].classList.contains('navListItemActive')){
+                  if (links[j].classList.contains('navListItemActive')) {
                     coll[i].nextElementSibling.classList.toggle('hide');
                     coll[i].childNodes[1].classList.toggle('rotate');
                     checkActiveCategory = false;
@@ -14,7 +119,7 @@
                 }
               }
 
-              coll[i].addEventListener('click', function() {
+              coll[i].addEventListener('click', function () {
                 var arrow = this.childNodes[1];
                 arrow.classList.toggle('rotate');
                 var content = this.nextElementSibling;
@@ -22,18 +127,18 @@
               });
             }
 
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
               createToggler('#navToggler', '#docsNav', 'docsSliderActive');
               createToggler('#tocToggler', 'body', 'tocActive');
 
               var headings = document.querySelector('.toc-headings');
-              headings && headings.addEventListener('click', function(event) {
+              headings && headings.addEventListener('click', function (event) {
                 var el = event.target;
-                while(el !== headings){
+                while (el !== headings) {
                   if (el.tagName === 'A') {
                     document.body.classList.remove('tocActive');
                     break;
-                  } else{
+                  } else {
                     el = el.parentNode;
                   }
                 }
@@ -47,23 +152,40 @@
                   return;
                 }
 
-                toggler.onclick = function(event) {
+                toggler.onclick = function (event) {
                   event.preventDefault();
 
                   target.classList.toggle(className);
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/belivvr/aframe-docs/blob/master/docs/writing-a-component.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">구성 요소 작성</h1></header><article><div><span><p>A-Frame의 <a href="../introduction/entity-component-system.md">entity-component framework</a> 의 구성요소는 자바스크립트 모듈로서, entity에
-혼합,매치, 구성하여 외관, 행동, 기능성들을 만들수 있습니다. 자바스크립트에 컴포넌트를 등록하여
-DOM에서 선언적으로 사용할 수 있습니다. A-Frame 애플리케이션의 대부분의 코드는 구성요소 내에
-있어야 합니다.</p>
-<p><img src="https://cloud.githubusercontent.com/assets/674727/21803890/0d44f0c2-d6e1-11e6-8b4f-7fb14c05a492.jpg" alt="vehicleimage">
-<small class="image-caption"><i>Image by Ruben Mueller from vrjump.de</i></small></p>
-<p>이 가이드는 느리게 진행 할 것이며, 보기전에 <a href="../core/component.md">Component API documentation</a> 를
-읽어보는게 좋고, 문서화는 간결해질 것 입니다. 구성요소를 정의하려면 먼저 <code>&lt;a-scene&gt;</code> 을
-사용합니다:</p>
-<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+          </script>
+        </nav>
+      </div>
+      <div class="container mainContainer docsContainer">
+        <div class="wrapper">
+          <div class="post">
+            <header class="postHeader"><a class="edit-page-link button"
+                href="https://github.com/belivvr/aframe-docs/blob/master/docs/writing-a-component.md" target="_blank"
+                rel="noreferrer noopener">Edit</a>
+              <h1 id="__docusaurus" class="postHeaderTitle">구성 요소 작성</h1>
+            </header>
+            <article>
+              <div><span>
+                  <p>A-Frame의 <a href="../introduction/entity-component-system.md">entity-component framework</a> 의
+                    구성요소는 자바스크립트 모듈로서, entity에
+                    혼합,매치, 구성하여 외관, 행동, 기능성들을 만들수 있습니다. 자바스크립트에 컴포넌트를 등록하여
+                    DOM에서 선언적으로 사용할 수 있습니다. A-Frame 애플리케이션의 대부분의 코드는 구성요소 내에
+                    있어야 합니다.</p>
+                  <p><img
+                      src="https://cloud.githubusercontent.com/assets/674727/21803890/0d44f0c2-d6e1-11e6-8b4f-7fb14c05a492.jpg"
+                      alt="vehicleimage">
+                    <small class="image-caption"><i>Image by Ruben Mueller from vrjump.de</i></small>
+                  </p>
+                  <p>이 가이드는 느리게 진행 할 것이며, 보기전에 <a href="../core/component.md">Component API documentation</a> 를
+                    읽어보는게 좋고, 문서화는 간결해질 것 입니다. 구성요소를 정의하려면 먼저 <code>&lt;a-scene&gt;</code> 을
+                    사용합니다:</p>
+                  <pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"foo-component.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
@@ -80,71 +202,122 @@ DOM에서 선언적으로 사용할 수 있습니다. A-Frame 애플리케이션
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<p>우리는 구성요소를 쓰는 것에 대해 검토할 것 입니다. 이 예시는 사소한 일들을 할것이지만,
-데이터 흐름,API,그리고 사용법을 보여줄 것입니다. 비독점 구성요소의 예를 보면
-<a href="#learning-through-components-in-ecosystem">Learning Through Coponents in Ecosystem section</a>. 학습 부분을 참고하세요.</p>
-<!-- toc -->
-<h2><a class="anchor" aria-hidden="true" id="예시-hello-world-component"></a><a href="#예시-hello-world-component" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>예시: <code>hello-world</code> Component</h2>
-<p>가장 기본적인 구성 요소부터 시작해서 일반적인 아이디어를 얻도록 합시다.
-구성요소의 도면요소가 사용중인 경우 간단한 메시지를 한번 기록합니다
-<a href="../core/component.md#init"><code>.init()</code> handler</a>.</p>
-<h3><a class="anchor" aria-hidden="true" id="컴포넌트-등록-aframeregistercomponent"></a><a href="#컴포넌트-등록-aframeregistercomponent" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>컴포넌트 등록 <code>AFRAME.registerComponent</code></h3>
-<p><code>AFRAME.registerComponent()</code> 구성요소가 등록이 됩니다. 구성요소의 일므을 전달하고,
-이름은 구성요소의 HTML 속성 이름으로 사용됩니다. DOM의 표현입니다.
-그런 다음 메서드와 속성의 자바스크립트 객체인 <strong>component definition</strong>를 통과 시킵니다.
-정의 내에서 <strong>lifecycle handler methods</strong>을 정의할 수 있고, 구성요소가 처음 해당
-도면요소에 연결될 때 한 번 호출됩니다. 그 중 하나는 <a href="../core/component.md#init"><code>.init()</code></a> 입니다.</p>
-<p>아래 예에서 우리는 단지 지정한 <code>.init()</code> 핸들러를 간단한 메시지를 기록합니다.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'hello-world'</span>, {
+                  <p>우리는 구성요소를 쓰는 것에 대해 검토할 것 입니다. 이 예시는 사소한 일들을 할것이지만,
+                    데이터 흐름,API,그리고 사용법을 보여줄 것입니다. 비독점 구성요소의 예를 보면
+                    <a href="#learning-through-components-in-ecosystem">Learning Through Coponents in Ecosystem
+                      section</a>. 학습 부분을 참고하세요.
+                  </p>
+                  <!-- toc -->
+                  <h2><a class="anchor" aria-hidden="true" id="예시-hello-world-component"></a><a
+                      href="#예시-hello-world-component" aria-hidden="true" class="hash-link"><svg class="hash-link-icon"
+                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>예시: <code>hello-world</code> Component</h2>
+                  <p>가장 기본적인 구성 요소부터 시작해서 일반적인 아이디어를 얻도록 합시다.
+                    구성요소의 도면요소가 사용중인 경우 간단한 메시지를 한번 기록합니다
+                    <a href="../core/component.md#init"><code>.init()</code> handler</a>.
+                  </p>
+                  <h3><a class="anchor" aria-hidden="true" id="컴포넌트-등록-aframeregistercomponent"></a><a
+                      href="#컴포넌트-등록-aframeregistercomponent" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>컴포넌트 등록 <code>AFRAME.registerComponent</code></h3>
+                  <p><code>AFRAME.registerComponent()</code> 구성요소가 등록이 됩니다. 구성요소의 일므을 전달하고,
+                    이름은 구성요소의 HTML 속성 이름으로 사용됩니다. DOM의 표현입니다.
+                    그런 다음 메서드와 속성의 자바스크립트 객체인 <strong>component definition</strong>를 통과 시킵니다.
+                    정의 내에서 <strong>lifecycle handler methods</strong>을 정의할 수 있고, 구성요소가 처음 해당
+                    도면요소에 연결될 때 한 번 호출됩니다. 그 중 하나는 <a href="../core/component.md#init"><code>.init()</code></a> 입니다.</p>
+                  <p>아래 예에서 우리는 단지 지정한 <code>.init()</code> 핸들러를 간단한 메시지를 기록합니다.</p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'hello-world'</span>, {
   <span class="hljs-attr">init</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Hello, World!'</span>);
   }
 });
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="html에서-구성-요소-사용"></a><a href="#html에서-구성-요소-사용" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>HTML에서 구성 요소 사용</h3>
-<p>HTML 속성으로 <code>hello-world</code>을 선언적으로 사용할 수 있다.</p>
-<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
+                  <h3><a class="anchor" aria-hidden="true" id="html에서-구성-요소-사용"></a><a href="#html에서-구성-요소-사용"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>HTML에서 구성 요소 사용</h3>
+                  <p>HTML 속성으로 <code>hello-world</code>을 선언적으로 사용할 수 있다.</p>
+                  <pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span> <span class="hljs-attr">hello-world</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-entity</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
 </code></pre>
-<p>entity가 연결되고 초기화되면 우리는 초기화를 할 것입니다. entity가 준비된 후에만 호출됩니다.
-<strong>We don't have to worry about waiting for the scene or entity to set up</strong> 바로 작동이 되서 콘솔을 확인하면 <code>Hello, World!</code> 씬(scene)이 시작되고 장면이 끝난 후 한 번 기록이 될것입니다.</p>
-<h3><a class="anchor" aria-hidden="true" id="js에서-구성-요소-사용"></a><a href="#js에서-구성-요소-사용" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>JS에서 구성 요소 사용</h3>
-<p>정적 HTML을 통해 구성요소를 설정하는 것이 아니라 구성요소를 설정하는 또 다른 방법인비낟.
-장면 오소는 구성 요소를 취하는 것이 가능하며, <code>.setAttribute()</code> 씬(scene) 요소도 사용
-할 수 있고, 우리가 만든 <code>hello-world</code> 구성요소를 프로그램적으로 장면에 설정할 수 있습니다.</p>
-<pre><code class="hljs css language-js"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-scene'</span>).setAttribute(<span class="hljs-string">'hello-world'</span>, <span class="hljs-string">''</span>);
+                  <p>entity가 연결되고 초기화되면 우리는 초기화를 할 것입니다. entity가 준비된 후에만 호출됩니다.
+                    <strong>We don't have to worry about waiting for the scene or entity to set up</strong> 바로 작동이 되서
+                    콘솔을 확인하면 <code>Hello, World!</code> 씬(scene)이 시작되고 장면이 끝난 후 한 번 기록이 될것입니다.
+                  </p>
+                  <h3><a class="anchor" aria-hidden="true" id="js에서-구성-요소-사용"></a><a href="#js에서-구성-요소-사용"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>JS에서 구성 요소 사용</h3>
+                  <p>정적 HTML을 통해 구성요소를 설정하는 것이 아니라 구성요소를 설정하는 또 다른 방법인비낟.
+                    장면 오소는 구성 요소를 취하는 것이 가능하며, <code>.setAttribute()</code> 씬(scene) 요소도 사용
+                    할 수 있고, 우리가 만든 <code>hello-world</code> 구성요소를 프로그램적으로 장면에 설정할 수 있습니다.</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-scene'</span>).setAttribute(<span class="hljs-string">'hello-world'</span>, <span class="hljs-string">''</span>);
 </code></pre>
-<h2><a class="anchor" aria-hidden="true" id="예시-log-구성요소"></a><a href="#예시-log-구성요소" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>예시: <code>log</code> 구성요소</h2>
-<p><code>hello-world</code> 컴포넌트와 비슷한 <code>log</code> 구성요소를 만들 수 있습니다.
-<code>console.log</code> 사용 하면 되며, 더 많은 <code>console.log</code>를 할 수 있게 됩니다.
-<code>hello-world</code> 라는 것 보다 <code>log</code> 구성 요소는 어떤 문자열이든 기록할 것입니다.
-우리는 정의를 통해 데이터를 구성요소에 전달하는 방법을 찾습니다. 스키마를 통해 구성
-가능한 속성입니다.</p>
-<h3><a class="anchor" aria-hidden="true" id="스키마로-속성-정의"></a><a href="#스키마로-속성-정의" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>스키마로 속성 정의</h3>
-<p><strong>스키마</strong>는 구성 요소의 <strong>속성</strong>을 정의합니다. 비유하자면
-구성 요소를 함수로 생각하면 구성 요소의 속성은 다음과 함수 인수 와 같습니다.
-속성에는 이름이 있습니다(구성 요소에
-하나의 속성), 기본값 및 <strong>속성 유형</strong>. 속성 유형 정의
-데이터가 문자열로 전달된 경우(즉, DOM에서) 데이터가 구문 분석되는 방식입니다.</p>
-<p><code>log</code> 구성요소의 경우 다음을 통해 <code>message</code> 속성 유형을 정의합니다.
-'스키마'. <code>message</code> 속성 유형은 <code>string</code> 속성 유형을 가지며 기본값은
-<code>Hello, World!</code>입니다.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
+                  <h2><a class="anchor" aria-hidden="true" id="예시-log-구성요소"></a><a href="#예시-log-구성요소"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>예시: <code>log</code> 구성요소</h2>
+                  <p><code>hello-world</code> 컴포넌트와 비슷한 <code>log</code> 구성요소를 만들 수 있습니다.
+                    <code>console.log</code> 사용 하면 되며, 더 많은 <code>console.log</code>를 할 수 있게 됩니다.
+                    <code>hello-world</code> 라는 것 보다 <code>log</code> 구성 요소는 어떤 문자열이든 기록할 것입니다.
+                    우리는 정의를 통해 데이터를 구성요소에 전달하는 방법을 찾습니다. 스키마를 통해 구성
+                    가능한 속성입니다.
+                  </p>
+                  <h3><a class="anchor" aria-hidden="true" id="스키마로-속성-정의"></a><a href="#스키마로-속성-정의" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>스키마로 속성 정의</h3>
+                  <p><strong>스키마</strong>는 구성 요소의 <strong>속성</strong>을 정의합니다. 비유하자면
+                    구성 요소를 함수로 생각하면 구성 요소의 속성은 다음과 함수 인수 와 같습니다.
+                    속성에는 이름이 있습니다(구성 요소에
+                    하나의 속성), 기본값 및 <strong>속성 유형</strong>. 속성 유형 정의
+                    데이터가 문자열로 전달된 경우(즉, DOM에서) 데이터가 구문 분석되는 방식입니다.</p>
+                  <p><code>log</code> 구성요소의 경우 다음을 통해 <code>message</code> 속성 유형을 정의합니다.
+                    '스키마'. <code>message</code> 속성 유형은 <code>string</code> 속성 유형을 가지며 기본값은
+                    <code>Hello, World!</code>입니다.
+                  </p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">message</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">'Hello, World!'</span>}
   },
   <span class="hljs-comment">// ...</span>
 });
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="라이프사이클-핸들러의-속성-데이터-사용"></a><a href="#라이프사이클-핸들러의-속성-데이터-사용" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>라이프사이클 핸들러의 속성 데이터 사용</h3>
-<p><code>string</code> 속성 유형은 들어오는 데이터에 대해 구문 분석을 수행하지 않으며,
-라이프사이클 메소드 핸들러에 그대로 전달하십시오. 이제 <code>console.log</code>를 실행해 보겠습니다.
-<code>message</code> 속성 유형입니다. <code>hello-world</code> 구성 요소와 마찬가지로 <code>.init()</code>를 작성합니다.
-하지만 이번에는 하드코딩된 문자열을 기록하지 않습니다. 구성 요소의
-속성 유형 값은 <code>this.data</code>를 통해 사용할 수 있습니다. 그럼 로그에 기록을 해봅시다.
-<code>this.data.message</code>!</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
+                  <h3><a class="anchor" aria-hidden="true" id="라이프사이클-핸들러의-속성-데이터-사용"></a><a
+                      href="#라이프사이클-핸들러의-속성-데이터-사용" aria-hidden="true" class="hash-link"><svg class="hash-link-icon"
+                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>라이프사이클 핸들러의 속성 데이터 사용</h3>
+                  <p><code>string</code> 속성 유형은 들어오는 데이터에 대해 구문 분석을 수행하지 않으며,
+                    라이프사이클 메소드 핸들러에 그대로 전달하십시오. 이제 <code>console.log</code>를 실행해 보겠습니다.
+                    <code>message</code> 속성 유형입니다. <code>hello-world</code> 구성 요소와 마찬가지로 <code>.init()</code>를 작성합니다.
+                    하지만 이번에는 하드코딩된 문자열을 기록하지 않습니다. 구성 요소의
+                    속성 유형 값은 <code>this.data</code>를 통해 사용할 수 있습니다. 그럼 로그에 기록을 해봅시다.
+                    <code>this.data.message</code>!
+                  </p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">message</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">'Hello, World!'</span>}
   },
@@ -154,36 +327,51 @@ DOM에서 선언적으로 사용할 수 있습니다. A-Frame 애플리케이션
   }
 });
 </code></pre>
-<p>그런 다음 HTML에서 구성 요소를 entity에 연결할 수 있습니다. 다중 속성의 경우
-구성 요소에서 구문은 <a href="http://webdesign.about.com/od/beginningcss/qt/tipcssinlinesty.htm">inline css styles</a>(속성
-<code>:</code> 및 <code>;</code>로 구분된 속성):</p>
-<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
+                  <p>그런 다음 HTML에서 구성 요소를 entity에 연결할 수 있습니다. 다중 속성의 경우
+                    구성 요소에서 구문은 <a href="http://webdesign.about.com/od/beginningcss/qt/tipcssinlinesty.htm">inline css
+                      styles</a>(속성
+                    <code>:</code> 및 <code>;</code>로 구분된 속성):
+                  </p>
+                  <pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span> <span class="hljs-attr">log</span>=<span class="hljs-string">"message: Hello, Metaverse!"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-entity</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="속성-업데이트-처리"></a><a href="#속성-업데이트-처리" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>속성 업데이트 처리</h3>
-<p>지금까지 한 번만 호출되는 <code>.init()</code> 초기 속성만 있는 구성 요소 수명 주기 시작 시 한번
-호출 되는 핸들러만 사용했습니다. 그러나 구성 요소의 속성은 동적으로 업데이트되는 경우가
-많습니다. 우리는 사용할 수 있습니다 속성 업데이트를 처리하는 <code>.update()</code> 핸들러를.</p>
-<p><img src="https://cloud.githubusercontent.com/assets/674727/21803913/2966ba7e-d6e1-11e6-9179-8acafc87540c.jpg" alt="methodsimage">
-<small class="image-caption"><i>라이프사이클 메서드 핸들러. Image by Ruben Mueller from vrjump.de</i></small></p>
-<p>이를 보여주기 위해 <code>log</code> 구성요소가 entity <a href="/docs/aframe-docs/docs/doc10#emitting-an-event-with-emit">이벤트를 방출</a>합니다.
-먼저 'event' 속성 유형을 추가합니다. 구성 요소가 수신 대기해야 하는 이벤트를 지정합니다.</p>
-<pre><code class="hljs css language-js"><span class="hljs-comment">// ...</span>
+                  <h3><a class="anchor" aria-hidden="true" id="속성-업데이트-처리"></a><a href="#속성-업데이트-처리" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>속성 업데이트 처리</h3>
+                  <p>지금까지 한 번만 호출되는 <code>.init()</code> 초기 속성만 있는 구성 요소 수명 주기 시작 시 한번
+                    호출 되는 핸들러만 사용했습니다. 그러나 구성 요소의 속성은 동적으로 업데이트되는 경우가
+                    많습니다. 우리는 사용할 수 있습니다 속성 업데이트를 처리하는 <code>.update()</code> 핸들러를.</p>
+                  <p><img
+                      src="https://cloud.githubusercontent.com/assets/674727/21803913/2966ba7e-d6e1-11e6-9179-8acafc87540c.jpg"
+                      alt="methodsimage">
+                    <small class="image-caption"><i>라이프사이클 메서드 핸들러. Image by Ruben Mueller from vrjump.de</i></small>
+                  </p>
+                  <p>이를 보여주기 위해 <code>log</code> 구성요소가 entity <a
+                      href="/docs/aframe-docs/docs/doc10#emitting-an-event-with-emit">이벤트를 방출</a>합니다.
+                    먼저 'event' 속성 유형을 추가합니다. 구성 요소가 수신 대기해야 하는 이벤트를 지정합니다.</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-comment">// ...</span>
 <span class="hljs-attr">schema</span>: {
   <span class="hljs-attr">event</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">''</span>},
   <span class="hljs-attr">message</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">'Hello, World!'</span>},
 },
 <span class="hljs-comment">// ...</span>
 </code></pre>
-<p>그런 다음 실제로 모든 것을 <code>.init()</code> 핸들러에서
-<code>.update()</code> 핸들러. <code>.update()</code> 핸들러도 호출 직후에 호출됩니다.
-컴포넌트가 첨부될 때 <code>.init()</code>. 때때로 우리는 대부분의 논리를 가지고 있습니다.
-<code>.update()</code> 핸들러에서 초기화할 수 있도록 <em>및</em> 모든 업데이트를 처리할 수 있습니다.</p>
-<p>우리가 하고싶은 것은 <a href="/docs/aframe-docs/docs/doc10#adding-an-event-listener-with-addeventlistener">add an event listener</a>입니다.
-메시지를 기록하기 전에 이벤트를 수신합니다. 'event' 속성 유형이
-지정하지 않으면 메시지만 기록합니다.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
+                  <p>그런 다음 실제로 모든 것을 <code>.init()</code> 핸들러에서
+                    <code>.update()</code> 핸들러. <code>.update()</code> 핸들러도 호출 직후에 호출됩니다.
+                    컴포넌트가 첨부될 때 <code>.init()</code>. 때때로 우리는 대부분의 논리를 가지고 있습니다.
+                    <code>.update()</code> 핸들러에서 초기화할 수 있도록 <em>및</em> 모든 업데이트를 처리할 수 있습니다.
+                  </p>
+                  <p>우리가 하고싶은 것은 <a
+                      href="/docs/aframe-docs/docs/doc10#adding-an-event-listener-with-addeventlistener">add an event
+                      listener</a>입니다.
+                    메시지를 기록하기 전에 이벤트를 수신합니다. 'event' 속성 유형이
+                    지정하지 않으면 메시지만 기록합니다.</p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">event</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">''</span>},
     <span class="hljs-attr">message</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">'Hello, World!'</span>}
@@ -205,14 +393,14 @@ DOM에서 선언적으로 사용할 수 있습니다. A-Frame 애플리케이션
   }
 });
 </code></pre>
-<p>이제 이벤트 리스너 속성을 추가했으므로 실제 속성 업데이트.
-'event' 속성 유형이 변경되면(예:<code>.setAttribute()</code>), 이전
-이벤트 리스너를 제거하고 추가해야 합니다.</p>
-<p>그러나 [이벤트 리스너를 제거]하려면 함수에 대한 참조가 필요합니다. 그래서
-첨부할 때마다 먼저 <code>this.eventHandlerFn</code>에 함수를 저장합시다.
-이벤트 리스너. <code>this</code>를 통해 구성 요소에 속성을 첨부하면
-다른 모든 수명 주기 처리기에서 사용할 수 있습니다.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
+                  <p>이제 이벤트 리스너 속성을 추가했으므로 실제 속성 업데이트.
+                    'event' 속성 유형이 변경되면(예:<code>.setAttribute()</code>), 이전
+                    이벤트 리스너를 제거하고 추가해야 합니다.</p>
+                  <p>그러나 [이벤트 리스너를 제거]하려면 함수에 대한 참조가 필요합니다. 그래서
+                    첨부할 때마다 먼저 <code>this.eventHandlerFn</code>에 함수를 저장합시다.
+                    이벤트 리스너. <code>this</code>를 통해 구성 요소에 속성을 첨부하면
+                    다른 모든 수명 주기 처리기에서 사용할 수 있습니다.</p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">event</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">''</span>},
     <span class="hljs-attr">message</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">'Hello, World!'</span>}
@@ -239,11 +427,12 @@ DOM에서 선언적으로 사용할 수 있습니다. A-Frame 애플리케이션
   }
 });
 </code></pre>
-<p>이제 이벤트 핸들러 함수가 저장되었습니다. 이벤트를 제거할 수 있습니다.
-'event' 속성 유형이 변경될 때마다 리스너. 업데이트만 하고 싶습니다.
-'event' 속성 유형이 변경될 때 이벤트 리스너. 이것을 확인하여
-<code>.update()</code> 핸들러가 제공하는 <code>oldData</code> 인수에 대한 <code>this.data</code> 작성하세요:</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
+                  <p>이제 이벤트 핸들러 함수가 저장되었습니다. 이벤트를 제거할 수 있습니다.
+                    'event' 속성 유형이 변경될 때마다 리스너. 업데이트만 하고 싶습니다.
+                    'event' 속성 유형이 변경될 때 이벤트 리스너. 이것을 확인하여
+                    <code>.update()</code> 핸들러가 제공하는 <code>oldData</code> 인수에 대한 <code>this.data</code> 작성하세요:
+                  </p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">event</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">''</span>},
     <span class="hljs-attr">message</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">'Hello, World!'</span>}
@@ -271,28 +460,36 @@ DOM에서 선언적으로 사용할 수 있습니다. A-Frame 애플리케이션
   }
 });
 </code></pre>
-<p>업데이트 이벤트 리스너로 구성 요소를 테스트해 보겠습니다. 다음의 장면입니다.</p>
-<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
+                  <p>업데이트 이벤트 리스너로 구성 요소를 테스트해 보겠습니다. 다음의 장면입니다.</p>
+                  <pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span> <span class="hljs-attr">log</span>=<span class="hljs-string">"event: anEvent; message: Hello, Metaverse!"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-entity</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
 </code></pre>
-<p>entity가 <a href="/docs/aframe-docs/docs/doc10#emitting-an-event-with-emit">emit the event</a>하여 테스트해 보겠습니다.</p>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-entity'</span>);
+                  <p>entity가 <a href="/docs/aframe-docs/docs/doc10#emitting-an-event-with-emit">emit the event</a>하여
+                    테스트해 보겠습니다.</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-entity'</span>);
 el.emit(<span class="hljs-string">'anEvent'</span>);
 <span class="hljs-comment">// &gt;&gt; "Hello, Metaverse!"</span>
 </code></pre>
-<p>이제 <code>.update()</code> 핸들러를 테스트하기 위해 이벤트를 업데이트하겠습니다.</p>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-entity'</span>);
+                  <p>이제 <code>.update()</code> 핸들러를 테스트하기 위해 이벤트를 업데이트하겠습니다.</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-entity'</span>);
 el.setAttribute(<span class="hljs-string">'log'</span>, {<span class="hljs-attr">event</span>: <span class="hljs-string">'anotherEvent'</span>, <span class="hljs-attr">message</span>: <span class="hljs-string">'Hello, new event!'</span>});
 el.emit(<span class="hljs-string">'anotherEvent'</span>);
 <span class="hljs-comment">// &gt;&gt; "Hello, new event!"</span>
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="구성-요소-제거"></a><a href="#구성-요소-제거" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>구성 요소 제거</h3>
-<p><a href="/docs/aframe-docs/docs/doc10#removing-a-component-with-removeattribute">구성요소가 entity에서 분리</a>인 경우를 처리해 보겠습니다.
-(즉, <code>.removeAttribute('log')</code>). <code>.remove()</code> 핸들러를 구현할 수 있습니다.
-구성 요소가 제거될 때 호출됩니다. 'log' 구성요소의 경우
-entity에 연결된 구성 요소의 모든 이벤트 리스너를 제거합니다.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
+                  <h3><a class="anchor" aria-hidden="true" id="구성-요소-제거"></a><a href="#구성-요소-제거" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>구성 요소 제거</h3>
+                  <p><a href="/docs/aframe-docs/docs/doc10#removing-a-component-with-removeattribute">구성요소가 entity에서
+                      분리</a>인 경우를 처리해 보겠습니다.
+                    (즉, <code>.removeAttribute('log')</code>). <code>.remove()</code> 핸들러를 구현할 수 있습니다.
+                    구성 요소가 제거될 때 호출됩니다. 'log' 구성요소의 경우
+                    entity에 연결된 구성 요소의 모든 이벤트 리스너를 제거합니다.</p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">event</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">''</span>},
     <span class="hljs-attr">message</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">'Hello, World!'</span>}
@@ -332,22 +529,28 @@ entity에 연결된 구성 요소의 모든 이벤트 리스너를 제거합니�
   }
 });
 </code></pre>
-<p>이제 제거 핸들러를 테스트해 보겠습니다. 구성 요소를 제거하고 확인해보자
-이벤트를 내보내는 것은 더 이상 아무것도 하지 않습니다:</p>
-<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
+                  <p>이제 제거 핸들러를 테스트해 보겠습니다. 구성 요소를 제거하고 확인해보자
+                    이벤트를 내보내는 것은 더 이상 아무것도 하지 않습니다:</p>
+                  <pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span> <span class="hljs-attr">log</span>=<span class="hljs-string">"event: anEvent; message: Hello, Metaverse!"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-entity</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
 </code></pre>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-entity'</span>);
+                  <pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-entity'</span>);
 el.removeAttribute(<span class="hljs-string">'log'</span>);
 el.emit(<span class="hljs-string">'anEvent'</span>);
 <span class="hljs-comment">// &gt;&gt; Nothing should be logged...</span>
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="구성-요소의-다중-인스턴스-허용"></a><a href="#구성-요소의-다중-인스턴스-허용" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>구성 요소의 다중 인스턴스 허용</h3>
-<p>동일한 entity에 여러 '로그' 구성 요소를 연결하도록 허용해 보겠습니다
-따라서 <a href="../core/component.md#multiple"><code>.multiple</code> 플래그가 있는 다중 인스턴스</a>를 활성화합니다.
-'true'로 작성하세요.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
+                  <h3><a class="anchor" aria-hidden="true" id="구성-요소의-다중-인스턴스-허용"></a><a href="#구성-요소의-다중-인스턴스-허용"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>구성 요소의 다중 인스턴스 허용</h3>
+                  <p>동일한 entity에 여러 '로그' 구성 요소를 연결하도록 허용해 보겠습니다
+                    따라서 <a href="../core/component.md#multiple"><code>.multiple</code> 플래그가 있는 다중 인스턴스</a>를 활성화합니다.
+                    'true'로 작성하세요.</p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'log'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">event</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">''</span>},
     <span class="hljs-attr">message</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">default</span>: <span class="hljs-string">'Hello, World!'</span>}
@@ -358,37 +561,56 @@ el.emit(<span class="hljs-string">'anEvent'</span>);
   <span class="hljs-comment">// ...</span>
 });
 </code></pre>
-<p>다중 인스턴스 구성 요소의 속성 이름 구문에는 ID 접미사가 있는 이중 밑줄인
-<code>&lt;COMPONENTNAME&gt;__&lt;ID&gt;</code> 형식입니다. 아이디 우리가 무엇을 선택하든 될 수 있습니다.
-예를 들어 HTML에서:</p>
-<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
+                  <p>다중 인스턴스 구성 요소의 속성 이름 구문에는 ID 접미사가 있는 이중 밑줄인
+                    <code>&lt;COMPONENTNAME&gt;__&lt;ID&gt;</code> 형식입니다. 아이디 우리가 무엇을 선택하든 될 수 있습니다.
+                    예를 들어 HTML에서:
+                  </p>
+                  <pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span> <span class="hljs-attr">log__helloworld</span>=<span class="hljs-string">"message: Hello, World!"</span>
             <span class="hljs-attr">log__metaverse</span>=<span class="hljs-string">"message: Hello, Metaverse!"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-entity</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
 </code></pre>
-<p>Or from JS:</p>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-entity'</span>);
+                  <p>Or from JS:</p>
+                  <pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'a-entity'</span>);
 el.setAttribute(<span class="hljs-string">'log__helloworld'</span>, {<span class="hljs-attr">message</span>: <span class="hljs-string">'Hello, World!'</span>});
 el.setAttribute(<span class="hljs-string">'log__metaverse'</span>, {<span class="hljs-attr">message</span>: <span class="hljs-string">'Hello, Metaverse!'</span>});
 </code></pre>
-<p>구성 요소 내에서 원하는 경우 서로 다른 인스턴스를 구분할 수 있습니다.
-<code>this.id</code>와 <code>this.attrName</code>을 사용합니다. <code>log__helloworld</code>가 주어지면 <code>this.id</code>는
-'helloworld'가 되고 'this.attrName'은 전체 'log__helloworld'가 됩니다.</p>
-<p>그리고 기본 'log' 구성 요소가 있습니다!</p>
-<h2><a class="anchor" aria-hidden="true" id="예시-box-구성요소"></a><a href="#예시-box-구성요소" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>예시: <code>box</code> 구성요소</h2>
-<p>예를 들어 3D 개체를 추가하고 <a href="/docs/aframe-docs/docs/doc2">use three.js</a> 구성 요소를
-작성하여 장면 그래프를 만듭니다. 아이디어를 얻기 위해, 기본 '상자' 구성
-요소를 만들 것입니다. geometry과 material.</p>
-<p><img src="https://cloud.githubusercontent.com/assets/674727/20326452/b7f94966-ab3d-11e6-95e1-47cabf425278.jpg" alt="boximage">
-<small class="image-caption"><i>Image by Ruben Mueller from vrjump.de</i></small></p>
-<p><strong>참고:</strong> 이것은 <code>Hello, World!</code> 구성요소를 작성하는 것과 동일한 3D에 불과합니다.
-A-Frame은 다음과 같은 경우 <a href="../components/geometry.md">geometry</a> 및 <a href="../components/material.md">material</a> 구성 요소를 제공합니다.</p>
-<h3><a class="anchor" aria-hidden="true" id="스키마-및-api"></a><a href="#스키마-및-api" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>스키마 및 API</h3>
-<p>스키마부터 시작하겠습니다. 스키마는 구성 요소의 API를 정의합니다.
-'width', 'height', 'depth', 'color'를 속성을 통해 구성할 수 있습니다.
-'width', 'height' 및 'depth'는 숫자 유형입니다(즉, float) 기본값은 1미터입니다.
-'색상' 유형에는 색상 유형이 있습니다.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'box'</span>, {
+                  <p>구성 요소 내에서 원하는 경우 서로 다른 인스턴스를 구분할 수 있습니다.
+                    <code>this.id</code>와 <code>this.attrName</code>을 사용합니다. <code>log__helloworld</code>가 주어지면
+                    <code>this.id</code>는
+                    'helloworld'가 되고 'this.attrName'은 전체 'log__helloworld'가 됩니다.
+                  </p>
+                  <p>그리고 기본 'log' 구성 요소가 있습니다!</p>
+                  <h2><a class="anchor" aria-hidden="true" id="예시-box-구성요소"></a><a href="#예시-box-구성요소"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>예시: <code>box</code> 구성요소</h2>
+                  <p>예를 들어 3D 개체를 추가하고 <a href="/docs/aframe-docs/docs/doc2">use three.js</a> 구성 요소를
+                    작성하여 장면 그래프를 만듭니다. 아이디어를 얻기 위해, 기본 '상자' 구성
+                    요소를 만들 것입니다. geometry과 material.</p>
+                  <p><img
+                      src="https://cloud.githubusercontent.com/assets/674727/20326452/b7f94966-ab3d-11e6-95e1-47cabf425278.jpg"
+                      alt="boximage">
+                    <small class="image-caption"><i>Image by Ruben Mueller from vrjump.de</i></small>
+                  </p>
+                  <p><strong>참고:</strong> 이것은 <code>Hello, World!</code> 구성요소를 작성하는 것과 동일한 3D에 불과합니다.
+                    A-Frame은 다음과 같은 경우 <a href="../components/geometry.md">geometry</a> 및 <a
+                      href="../components/material.md">material</a> 구성 요소를 제공합니다.</p>
+                  <h3><a class="anchor" aria-hidden="true" id="스키마-및-api"></a><a href="#스키마-및-api" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>스키마 및 API</h3>
+                  <p>스키마부터 시작하겠습니다. 스키마는 구성 요소의 API를 정의합니다.
+                    'width', 'height', 'depth', 'color'를 속성을 통해 구성할 수 있습니다.
+                    'width', 'height' 및 'depth'는 숫자 유형입니다(즉, float) 기본값은 1미터입니다.
+                    '색상' 유형에는 색상 유형이 있습니다.</p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'box'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">width</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>, <span class="hljs-attr">default</span>: <span class="hljs-number">1</span>},
     <span class="hljs-attr">height</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>, <span class="hljs-attr">default</span>: <span class="hljs-number">1</span>},
@@ -397,20 +619,34 @@ A-Frame은 다음과 같은 경우 <a href="../components/geometry.md">geometry<
   }
 });
 </code></pre>
-<p>나중에 HTML을 통해 이 구성 요소를 사용할 때 구문은 다음과 같습니다.</p>
-<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
+                  <p>나중에 HTML을 통해 이 구성 요소를 사용할 때 구문은 다음과 같습니다.</p>
+                  <pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span> <span class="hljs-attr">box</span>=<span class="hljs-string">"width: 0.5; height: 0.25; depth: 1; color: orange"</span>
             <span class="hljs-attr">position</span>=<span class="hljs-string">"0 0 -5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-entity</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="box-mesh-작성"></a><a href="#box-mesh-작성" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Box Mesh 작성</h3>
-<p><code>.init()</code>에서 three.js 상자 메쉬를 만들고 나중에
-<code>.update()</code> 핸들러는 모든 속성 업데이트를 처리합니다. 상자를 만들려면
-three.js에서 <a href="https://threejs.org/docs/index.html#Reference/Geometries/BoxBufferGeometry"><code>THREE.BoxBufferGeometry</code></a>를 생성합니다.
-<a href="https://threejs.org/docs/index.html#Reference/Materials/MeshStandardMaterial"><code>THREE.MeshStandardMaterial</code></a>, 그리고 마지막으로
-<a href="https://threejs.org/docs/index.html#Reference/Objects/Mesh"><code>THREE.Mesh</code></a>. entity에 메쉬를 설정하여 메쉬를 추가합니다.
-three.js 장면 그래프 <a href="/docs/aframe-docs/docs/doc2#setting-an-object3d-on-an-entity"><code>.setObject3D(name, object)</code> 사용함</a>:</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'box'</span>, {
+                  <h3><a class="anchor" aria-hidden="true" id="box-mesh-작성"></a><a href="#box-mesh-작성"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>Box Mesh 작성</h3>
+                  <p><code>.init()</code>에서 three.js 상자 메쉬를 만들고 나중에
+                    <code>.update()</code> 핸들러는 모든 속성 업데이트를 처리합니다. 상자를 만들려면
+                    three.js에서 <a
+                      href="https://threejs.org/docs/index.html#Reference/Geometries/BoxBufferGeometry"><code>THREE.BoxBufferGeometry</code></a>를
+                    생성합니다.
+                    <a
+                      href="https://threejs.org/docs/index.html#Reference/Materials/MeshStandardMaterial"><code>THREE.MeshStandardMaterial</code></a>,
+                    그리고 마지막으로
+                    <a href="https://threejs.org/docs/index.html#Reference/Objects/Mesh"><code>THREE.Mesh</code></a>.
+                    entity에 메쉬를 설정하여 메쉬를 추가합니다.
+                    three.js 장면 그래프 <a
+                      href="/docs/aframe-docs/docs/doc2#setting-an-object3d-on-an-entity"><code>.setObject3D(name, object)</code>
+                      사용함</a>:
+                  </p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'box'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">width</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>, <span class="hljs-attr">default</span>: <span class="hljs-number">1</span>},
     <span class="hljs-attr">height</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>, <span class="hljs-attr">default</span>: <span class="hljs-number">1</span>},
@@ -439,11 +675,12 @@ three.js 장면 그래프 <a href="/docs/aframe-docs/docs/doc2#setting-an-object
   }
 });
 </code></pre>
-<p>이제 업데이트를 처리해 보겠습니다. 지오메트리 관련 속성(예: 'width',
-<code>높이</code>, <code>깊이</code>) 업데이트를 수행하면 지오메트리를 다시 생성합니다. 만약
-재질 관련 속성(예: '색상')이 업데이트되면 메쉬에 액세스하여 업데이트하려면
-다음을 사용합니다. <code>.getObject3D('메시')</code>.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'box'</span>, {
+                  <p>이제 업데이트를 처리해 보겠습니다. 지오메트리 관련 속성(예: 'width',
+                    <code>높이</code>, <code>깊이</code>) 업데이트를 수행하면 지오메트리를 다시 생성합니다. 만약
+                    재질 관련 속성(예: '색상')이 업데이트되면 메쉬에 액세스하여 업데이트하려면
+                    다음을 사용합니다. <code>.getObject3D('메시')</code>.
+                  </p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'box'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">width</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>, <span class="hljs-attr">default</span>: <span class="hljs-number">1</span>},
     <span class="hljs-attr">height</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>, <span class="hljs-attr">default</span>: <span class="hljs-number">1</span>},
@@ -486,9 +723,17 @@ three.js 장면 그래프 <a href="/docs/aframe-docs/docs/doc2#setting-an-object
   }
 });
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="box-mesh-제거"></a><a href="#box-mesh-제거" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Box Mesh 제거</h3>
-<p>마지막으로 구성 요소 또는 entity가 제거되는 경우를 처리합니다. 이 경우 장면에선 메시를 제거하려고 합니다. <code>.remove()</code> 핸들러와 <code>.removeObject3D(name)</code>로 그렇게 할 수 있습니다.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'box'</span>, {
+                  <h3><a class="anchor" aria-hidden="true" id="box-mesh-제거"></a><a href="#box-mesh-제거"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>Box Mesh 제거</h3>
+                  <p>마지막으로 구성 요소 또는 entity가 제거되는 경우를 처리합니다. 이 경우 장면에선 메시를 제거하려고 합니다. <code>.remove()</code> 핸들러와
+                    <code>.removeObject3D(name)</code>로 그렇게 할 수 있습니다.
+                  </p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'box'</span>, {
   <span class="hljs-comment">// ...</span>
 
   <span class="hljs-attr">remove</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
@@ -496,33 +741,55 @@ three.js 장면 그래프 <a href="/docs/aframe-docs/docs/doc2#setting-an-object
   }
 });
 </code></pre>
-<p>기본적인 three.js <code>box</code> 구성요소를 마무리했습니다! 실제로 three.js 구성 요소는 더 유용한 작업을 수행합니다. three.js에서 수행할 수 있는 모든 것은 선언적으로 만들기 위해 A-Frame 구성 요소로 래핑될 수 있습니다. 따라서 three.js 기능과 생태계를 확인하고 어떤 구성 요소를 작성할 수 있는지 확인하십시오!</p>
-<h2><a class="anchor" aria-hidden="true" id="예시-follow-구성-요소"></a><a href="#예시-follow-구성-요소" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>예시: <code>follow</code> 구성 요소</h2>
-<p>한 entity가 다른 entity를 따르도록 지시하는 'follow' 구성 요소를 작성해 보겠습니다.
-이것은 렌더 루프의 모든 프레임에서 실행되는 지속적으로 실행되는 동작을 장면에 추가하는 <code>.tick()</code> 핸들러의 사용을 보여줍니다. 이것은 또한 entity 간의 관계를 보여줍니다.</p>
-<h3><a class="anchor" aria-hidden="true" id="스키마-및-api-1"></a><a href="#스키마-및-api-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>스키마 및 API</h3>
-<p>먼저 어떤 entity를 지정할지 지정하는 'target' 속성이 필요합니다.
-A-Frame에는 트릭을 수행하는 'selector' 속성 유형이 있습니다.
-쿼리 선택기를 전달하고 entity 요소를 다시 가져옵니다.
-또한 entity가 따라야 하는 속도를 지정하기 위해 <code>speed</code> 속성(m/s)을 추가합니다.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'follow'</span>, {
+                  <p>기본적인 three.js <code>box</code> 구성요소를 마무리했습니다! 실제로 three.js 구성 요소는 더 유용한 작업을 수행합니다. three.js에서 수행할 수
+                    있는 모든 것은 선언적으로 만들기 위해 A-Frame 구성 요소로 래핑될 수 있습니다. 따라서 three.js 기능과 생태계를 확인하고 어떤 구성 요소를 작성할 수 있는지
+                    확인하십시오!</p>
+                  <h2><a class="anchor" aria-hidden="true" id="예시-follow-구성-요소"></a><a href="#예시-follow-구성-요소"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>예시: <code>follow</code> 구성 요소</h2>
+                  <p>한 entity가 다른 entity를 따르도록 지시하는 'follow' 구성 요소를 작성해 보겠습니다.
+                    이것은 렌더 루프의 모든 프레임에서 실행되는 지속적으로 실행되는 동작을 장면에 추가하는 <code>.tick()</code> 핸들러의 사용을 보여줍니다. 이것은 또한 entity
+                    간의 관계를 보여줍니다.</p>
+                  <h3><a class="anchor" aria-hidden="true" id="스키마-및-api-1"></a><a href="#스키마-및-api-1"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>스키마 및 API</h3>
+                  <p>먼저 어떤 entity를 지정할지 지정하는 'target' 속성이 필요합니다.
+                    A-Frame에는 트릭을 수행하는 'selector' 속성 유형이 있습니다.
+                    쿼리 선택기를 전달하고 entity 요소를 다시 가져옵니다.
+                    또한 entity가 따라야 하는 속도를 지정하기 위해 <code>speed</code> 속성(m/s)을 추가합니다.</p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'follow'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">target</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'selector'</span>},
     <span class="hljs-attr">speed</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>}
   }
 });
 </code></pre>
-<p>나중에 HTML을 통해 이 구성 요소를 사용할 때 구문은 다음과 같습니다.</p>
-<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
+                  <p>나중에 HTML을 통해 이 구성 요소를 사용할 때 구문은 다음과 같습니다.</p>
+                  <pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-box</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"target-box"</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#5E82C5"</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"-3 0 -5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-box</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-box</span> <span class="hljs-attr">follow</span>=<span class="hljs-string">"target: #target-box; speed: 1"</span> <span class="hljs-attr">color</span>=<span class="hljs-string">"#FF6B6B"</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"3 0 -5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-box</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span>
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="도우미-벡터-만들기"></a><a href="#도우미-벡터-만들기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>도우미 벡터 만들기</h3>
-<p><code>.tick()</code> 핸들러는 모든 프레임에서 호출되므로(예:둘째), 우리는 그 성능을 확인하고 싶습니다.
-우리가 하고 싶지 않은 한 가지는 <code>THREE.Vector3</code> 객체와 같은 각 틱에 불필요한 객체를 생성하는 것입니다. 그러면 가비지 수집이 일시 중지되는 데
-도움이 됩니다. <code>THREE.Vector3</code>을 사용하여 벡터 작업을 수행해야 하므로 <code>.init()</code> 핸들러에서 한 번 생성하여 나중에 다시 사용할 수 있습니다.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'follow'</span>, {
+                  <h3><a class="anchor" aria-hidden="true" id="도우미-벡터-만들기"></a><a href="#도우미-벡터-만들기" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>도우미 벡터 만들기</h3>
+                  <p><code>.tick()</code> 핸들러는 모든 프레임에서 호출되므로(예:둘째), 우리는 그 성능을 확인하고 싶습니다.
+                    우리가 하고 싶지 않은 한 가지는 <code>THREE.Vector3</code> 객체와 같은 각 틱에 불필요한 객체를 생성하는 것입니다. 그러면 가비지 수집이 일시 중지되는 데
+                    도움이 됩니다. <code>THREE.Vector3</code>을 사용하여 벡터 작업을 수행해야 하므로 <code>.init()</code> 핸들러에서 한 번 생성하여 나중에 다시
+                    사용할 수 있습니다.</p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'follow'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">target</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'selector'</span>},
     <span class="hljs-attr">speed</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>}
@@ -533,18 +800,26 @@ A-Frame에는 트릭을 수행하는 'selector' 속성 유형이 있습니다.
   }
 });
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="tick-핸들러로-동작-정의하기"></a><a href="#tick-핸들러로-동작-정의하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>.tick()</code> 핸들러로 동작 정의하기</h3>
-<p>이제 컴포넌트가 원하는 속도로 대상을 향해 entity를 계속 이동하도록 <code>.tick()</code> 핸들러를
-작성합니다. A-Frame은 전역 장면 가동 시간을 <code>time</code>으로, 마지막 프레임 이후의 시간을
-<code>timeDelta</code>로 <code>tick()</code> 핸들러에 밀리초 단위로 전달합니다. 'timeDelta'를 사용하여 주어진
-속도에서 이 프레임에서 entity가 대상을 향해 얼마나 멀리 이동해야 하는지 계산할 수 있습니다.</p>
-<p>entity가 향해야 하는 방향을 계산하기 위해 대상 entity의 방향 벡터에서 entity의 위치 벡터를 뺍니다.
-우리는 <code>.object3D</code>를 통해 entity의 three.js 객체에 액세스할 수 있으며, 여기에서 위치 벡터 <code>.position</code>이 있습니다. 우리는 이전에 <code>init()</code> 핸들러에서 할당한 <code>this.directionVec3</code>에 방향 벡터를 저장합니다.</p>
-<p>그런 다음 이동 거리, 원하는 속도, 마지막 프레임 이후로 entity의 위치에 추가할 적절한 벡터를 찾는 데 경과한
-시간을 고려합니다. entity를 <code>.setAttribute</code>로 번역하고 다음 프레임에서 <code>.tick()</code> 핸들러가 다시 실행됩니다.</p>
-<p>전체 <code>.tick()</code> 핸들러는 다음과 같습니다. <code>.tick()</code>은 실제로 렌더 루프에 대한 참조 없이 렌더 루프에 연결하는
-쉬운 방법입니다. 메서드를 정의하기만 하면 됩니다. 코드 주석과 함께 아래를 따르세요.</p>
-<pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'follow'</span>, {
+                  <h3><a class="anchor" aria-hidden="true" id="tick-핸들러로-동작-정의하기"></a><a href="#tick-핸들러로-동작-정의하기"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>.tick()</code> 핸들러로 동작 정의하기</h3>
+                  <p>이제 컴포넌트가 원하는 속도로 대상을 향해 entity를 계속 이동하도록 <code>.tick()</code> 핸들러를
+                    작성합니다. A-Frame은 전역 장면 가동 시간을 <code>time</code>으로, 마지막 프레임 이후의 시간을
+                    <code>timeDelta</code>로 <code>tick()</code> 핸들러에 밀리초 단위로 전달합니다. 'timeDelta'를 사용하여 주어진
+                    속도에서 이 프레임에서 entity가 대상을 향해 얼마나 멀리 이동해야 하는지 계산할 수 있습니다.
+                  </p>
+                  <p>entity가 향해야 하는 방향을 계산하기 위해 대상 entity의 방향 벡터에서 entity의 위치 벡터를 뺍니다.
+                    우리는 <code>.object3D</code>를 통해 entity의 three.js 객체에 액세스할 수 있으며, 여기에서 위치 벡터 <code>.position</code>이
+                    있습니다. 우리는 이전에 <code>init()</code> 핸들러에서 할당한 <code>this.directionVec3</code>에 방향 벡터를 저장합니다.</p>
+                  <p>그런 다음 이동 거리, 원하는 속도, 마지막 프레임 이후로 entity의 위치에 추가할 적절한 벡터를 찾는 데 경과한
+                    시간을 고려합니다. entity를 <code>.setAttribute</code>로 번역하고 다음 프레임에서 <code>.tick()</code> 핸들러가 다시 실행됩니다.</p>
+                  <p>전체 <code>.tick()</code> 핸들러는 다음과 같습니다. <code>.tick()</code>은 실제로 렌더 루프에 대한 참조 없이 렌더 루프에 연결하는
+                    쉬운 방법입니다. 메서드를 정의하기만 하면 됩니다. 코드 주석과 함께 아래를 따르세요.</p>
+                  <pre><code class="hljs css language-js">AFRAME.registerComponent(<span class="hljs-string">'follow'</span>, {
   <span class="hljs-attr">schema</span>: {
     <span class="hljs-attr">target</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'selector'</span>},
     <span class="hljs-attr">speed</span>: {<span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>}
@@ -585,26 +860,118 @@ A-Frame에는 트릭을 수행하는 'selector' 속성 유형이 있습니다.
   }
 });
 </code></pre>
-<h2><a class="anchor" aria-hidden="true" id="생태계의-구성-요소를-통한-학습"></a><a href="#생태계의-구성-요소를-통한-학습" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>생태계의 구성 요소를 통한 학습</h2>
-<p>생태계에는 수많은 구성 요소가 있으며 대부분은 GitHub의 오픈 소스입니다. 학습하는 한 가지 방법은 다른 구성 요소의 소스 코드를 탐색하여 구성 요소가 제공하는 사용 사례를 확인하는 것입니다. 볼 수 있는
-몇 가지 장소는 다음과 같습니다.</p>
-<ul>
-<li><a href="https://github.com/aframevr/aframe/tree/master/src/components">A-Frame core components</a> - A-Frame의 표준 구성 요소의 소스 코드.</li>
-<li><a href="https://github.com/aframevr/a-painter/tree/master/src/components">A-Painter components</a> - A-Painter용 응용 프로그램별 구성 요소.</li>
-<li><a href="https://aframe.io/blog/"><strong>A Week of A-Frame</strong> Weekly Series</a></li>
-<li><a href="https://aframe.io/">Official Site</a></li>
-<li><a href="https://aframe.io/community/">Community</a></li>
-<li><a href="https://www.npmjs.com/search?q=keywords:aframe&amp;page=1&amp;ranking=optimal">Components on npm</a></li>
-<li><a href="https://twitter.com/aframevr/">Twitter</a></li>
-</ul>
-<h2><a class="anchor" aria-hidden="true" id="구성-요소-게시"></a><a href="#구성-요소-게시" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>구성 요소 게시</h2>
-<p>실제로 많은 구성 요소는 응용 프로그램별 또는 일회성 구성 요소입니다. 그러나 커뮤니티에 유용할 수 있고 다른
-응용 프로그램에서 작동할 수 있을 정도로 일반화된 구성 요소를 작성했다면 게시해야 합니다!</p>
-<p>구성요소 템플릿의 경우 <a href="https://www.npmjs.com/package/angle"><code>angle</code></a>를 사용하는 것이 좋습니다. 'angle'은 A-Frame용 명령줄 인터페이스입니다.
-기능 중 하나는 GitHub 및 npm에 게시하기 위한 구성 요소 템플릿을 설정하고 생태계의 다른 모든 구성 요소와
-일관성을 유지하는 것입니다. 템플릿을 설치하려면:</p>
-<pre><code class="hljs css language-sh">npm install -g angle &amp;&amp; angle initcomponent
+                  <h2><a class="anchor" aria-hidden="true" id="생태계의-구성-요소를-통한-학습"></a><a href="#생태계의-구성-요소를-통한-학습"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>생태계의 구성 요소를 통한 학습</h2>
+                  <p>생태계에는 수많은 구성 요소가 있으며 대부분은 GitHub의 오픈 소스입니다. 학습하는 한 가지 방법은 다른 구성 요소의 소스 코드를 탐색하여 구성 요소가 제공하는 사용 사례를
+                    확인하는 것입니다. 볼 수 있는
+                    몇 가지 장소는 다음과 같습니다.</p>
+                  <ul>
+                    <li><a href="https://github.com/aframevr/aframe/tree/master/src/components">A-Frame core
+                        components</a> - A-Frame의 표준 구성 요소의 소스 코드.</li>
+                    <li><a href="https://github.com/aframevr/a-painter/tree/master/src/components">A-Painter
+                        components</a> - A-Painter용 응용 프로그램별 구성 요소.</li>
+                    <li><a href="https://aframe.io/blog/"><strong>A Week of A-Frame</strong> Weekly Series</a></li>
+                    <li><a href="https://aframe.io/">Official Site</a></li>
+                    <li><a href="https://aframe.io/community/">Community</a></li>
+                    <li><a
+                        href="https://www.npmjs.com/search?q=keywords:aframe&amp;page=1&amp;ranking=optimal">Components
+                        on npm</a></li>
+                    <li><a href="https://twitter.com/aframevr/">Twitter</a></li>
+                  </ul>
+                  <h2><a class="anchor" aria-hidden="true" id="구성-요소-게시"></a><a href="#구성-요소-게시" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>구성 요소 게시</h2>
+                  <p>실제로 많은 구성 요소는 응용 프로그램별 또는 일회성 구성 요소입니다. 그러나 커뮤니티에 유용할 수 있고 다른
+                    응용 프로그램에서 작동할 수 있을 정도로 일반화된 구성 요소를 작성했다면 게시해야 합니다!</p>
+                  <p>구성요소 템플릿의 경우 <a href="https://www.npmjs.com/package/angle"><code>angle</code></a>를 사용하는 것이 좋습니다.
+                    'angle'은 A-Frame용 명령줄 인터페이스입니다.
+                    기능 중 하나는 GitHub 및 npm에 게시하기 위한 구성 요소 템플릿을 설정하고 생태계의 다른 모든 구성 요소와
+                    일관성을 유지하는 것입니다. 템플릿을 설치하려면:</p>
+                  <pre><code class="hljs css language-sh">npm install -g angle &amp;&amp; angle initcomponent
 </code></pre>
-<p><code>initcomponent</code>는 템플릿 설정을 위해 구성 요소 이름과 같은 정보를 요청합니다.
-일부 코드, 예제 및 문서를 작성하고 GitHub 및 npm에 게시하십시오!</p>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/aframe-docs/docs/doc13"><span class="arrow-prev">← </span><span class="function-name-prevnext">VR 헤드셋 및 WebVR 브라우저</span></a><a class="docs-next button" href="/docs/aframe-docs/docs/doc2"><span>three.js로 개발하기</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#예시-hello-world-component">예시: <code>hello-world</code> Component</a><ul class="toc-headings"><li><a href="#컴포넌트-등록-aframeregistercomponent">컴포넌트 등록 <code>AFRAME.registerComponent</code></a></li><li><a href="#html에서-구성-요소-사용">HTML에서 구성 요소 사용</a></li><li><a href="#js에서-구성-요소-사용">JS에서 구성 요소 사용</a></li></ul></li><li><a href="#예시-log-구성요소">예시: <code>log</code> 구성요소</a><ul class="toc-headings"><li><a href="#스키마로-속성-정의">스키마로 속성 정의</a></li><li><a href="#라이프사이클-핸들러의-속성-데이터-사용">라이프사이클 핸들러의 속성 데이터 사용</a></li><li><a href="#속성-업데이트-처리">속성 업데이트 처리</a></li><li><a href="#구성-요소-제거">구성 요소 제거</a></li><li><a href="#구성-요소의-다중-인스턴스-허용">구성 요소의 다중 인스턴스 허용</a></li></ul></li><li><a href="#예시-box-구성요소">예시: <code>box</code> 구성요소</a><ul class="toc-headings"><li><a href="#스키마-및-api">스키마 및 API</a></li><li><a href="#box-mesh-작성">Box Mesh 작성</a></li><li><a href="#box-mesh-제거">Box Mesh 제거</a></li></ul></li><li><a href="#예시-follow-구성-요소">예시: <code>follow</code> 구성 요소</a><ul class="toc-headings"><li><a href="#스키마-및-api-1">스키마 및 API</a></li><li><a href="#도우미-벡터-만들기">도우미 벡터 만들기</a></li><li><a href="#tick-핸들러로-동작-정의하기"><code>.tick()</code> 핸들러로 동작 정의하기</a></li></ul></li><li><a href="#생태계의-구성-요소를-통한-학습">생태계의 구성 요소를 통한 학습</a></li><li><a href="#구성-요소-게시">구성 요소 게시</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docs/aframe-docs/" class="nav-home"><img src="/docs/aframe-docs/img/favicon.ico" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/aframe-docs/docs/doc1.html">Getting Started (or other categories)</a><a href="/docs/aframe-docs/docs/doc2.html">Guides (or other categories)</a><a href="/docs/aframe-docs/docs/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/docs/aframe-docs/users">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/docs/aframe-docs/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docs/aframe-docs/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2021 Your Name or Your Company Name</section></footer></div></body></html>
+                  <p><code>initcomponent</code>는 템플릿 설정을 위해 구성 요소 이름과 같은 정보를 요청합니다.
+                    일부 코드, 예제 및 문서를 작성하고 GitHub 및 npm에 게시하십시오!</p>
+                </span></div>
+            </article>
+          </div>
+          <div class="docs-prevnext"><a class="docs-prev button" href="/docs/aframe-docs/docs/doc13.html"><span
+                class="arrow-prev">← </span><span class="function-name-prevnext">VR 헤드셋 및 WebVR 브라우저</span></a><a
+              class="docs-next button" href="/docs/aframe-docs/docs/doc2.html"><span>three.js로 개발하기</span><span
+                class="arrow-next"> →</span></a></div>
+        </div>
+      </div>
+      <nav class="onPageNav">
+        <ul class="toc-headings">
+          <li><a href="#예시-hello-world-component">예시: <code>hello-world</code> Component</a>
+            <ul class="toc-headings">
+              <li><a href="#컴포넌트-등록-aframeregistercomponent">컴포넌트 등록 <code>AFRAME.registerComponent</code></a></li>
+              <li><a href="#html에서-구성-요소-사용">HTML에서 구성 요소 사용</a></li>
+              <li><a href="#js에서-구성-요소-사용">JS에서 구성 요소 사용</a></li>
+            </ul>
+          </li>
+          <li><a href="#예시-log-구성요소">예시: <code>log</code> 구성요소</a>
+            <ul class="toc-headings">
+              <li><a href="#스키마로-속성-정의">스키마로 속성 정의</a></li>
+              <li><a href="#라이프사이클-핸들러의-속성-데이터-사용">라이프사이클 핸들러의 속성 데이터 사용</a></li>
+              <li><a href="#속성-업데이트-처리">속성 업데이트 처리</a></li>
+              <li><a href="#구성-요소-제거">구성 요소 제거</a></li>
+              <li><a href="#구성-요소의-다중-인스턴스-허용">구성 요소의 다중 인스턴스 허용</a></li>
+            </ul>
+          </li>
+          <li><a href="#예시-box-구성요소">예시: <code>box</code> 구성요소</a>
+            <ul class="toc-headings">
+              <li><a href="#스키마-및-api">스키마 및 API</a></li>
+              <li><a href="#box-mesh-작성">Box Mesh 작성</a></li>
+              <li><a href="#box-mesh-제거">Box Mesh 제거</a></li>
+            </ul>
+          </li>
+          <li><a href="#예시-follow-구성-요소">예시: <code>follow</code> 구성 요소</a>
+            <ul class="toc-headings">
+              <li><a href="#스키마-및-api-1">스키마 및 API</a></li>
+              <li><a href="#도우미-벡터-만들기">도우미 벡터 만들기</a></li>
+              <li><a href="#tick-핸들러로-동작-정의하기"><code>.tick()</code> 핸들러로 동작 정의하기</a></li>
+            </ul>
+          </li>
+          <li><a href="#생태계의-구성-요소를-통한-학습">생태계의 구성 요소를 통한 학습</a></li>
+          <li><a href="#구성-요소-게시">구성 요소 게시</a></li>
+        </ul>
+      </nav>
+    </div>
+    <footer class="nav-footer" id="footer">
+      <section class="sitemap"><a href="/docs/aframe-docs/" class="nav-home"><img
+            src="/docs/aframe-docs/img/favicon.ico" width="66" height="58" /></a>
+        <div>
+          <h5>Docs</h5><a href="/docs/aframe-docs/docs/doc1.html">Getting Started (or other categories)</a><a
+            href="/docs/aframe-docs/docs/doc2.html">Guides (or other categories)</a><a
+            href="/docs/aframe-docs/docs/doc3.html">API Reference (or other categories)</a>
+        </div>
+        <div>
+          <h5>Community</h5><a href="/docs/aframe-docs/users">User Showcase</a><a
+            href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack
+            Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank"
+            rel="noreferrer noopener">Twitter</a>
+        </div>
+        <div>
+          <h5>More</h5><a href="/docs/aframe-docs/blog">Blog</a><a href="https://github.com/">GitHub</a><a
+            class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers"
+            data-show-count="true" data-count-aria-label="# stargazers on GitHub"
+            aria-label="Star this project on GitHub">Star</a>
+        </div>
+      </section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener"
+        class="fbOpenSource"><img src="/docs/aframe-docs/img/oss_logo.png" alt="Facebook Open Source" width="170"
+          height="45" /></a>
+      <section class="copyright">Copyright © 2021 Your Name or Your Company Name</section>
+    </footer>
+  </div>
+</body>
+
+</html>
