@@ -25,7 +25,7 @@ const siteConfig = {
   // title: 'Aframe Korea', // Title for your website. / 이게 홈 태그랑 같이 물러있음
   tagline: 'A Aframe Korea site for koreans',
   url: 'https://aframe.belivvr.com', // Your website URL
-  baseUrl: '/aframe-docs/', // Base URL for your project */
+  baseUrl: 'docs/aframe-docs/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.githubio',
   //   baseUrl: '/test-site/',
