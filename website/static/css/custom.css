@@ -7,6 +7,36 @@
 
 /* your custom css */
 
+.button {
+    border: 1px solid #15171b;
+    border-radius: 3px;
+    color: #15171b;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 10px;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    transition: background .3s,color .3s;
+}
+
+.edit-page-link {
+    float: right;
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 3px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #15171b;
+    color: #fff;
+}
+a:active, a:hover {
+    outline-width: 0;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 

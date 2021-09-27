@@ -1,6 +1,6 @@
 ---
 id: doc8
-title: 설치
+title: "설치"
 ---
 
 이 설치 섹션에서는 A-Frame을 시작하기 위해 몇 가지 방법을 제공하지만,
@@ -179,6 +179,7 @@ cordova plugin add cordova-plugin-xhr-local-file
 
 
 #### 장치 준비
+
 브라우저 환경과 Cordova 환경의 가장 중요한 차이점은 `deviceready`장면을 렌더링 하기 전에 이벤트를 기다리는 것입니다.
 
 위의 샘플은 순수한 DOM+JS 접근 방식을 보여주지만 React와 같은 프레임워크를 사용할 수도 있습니다:

@@ -1,9 +1,9 @@
 ---
 id: doc11
-title: 3D 모델
-examples:
- - title: Modifying Material of Model
-   src: https://glitch.com/edit/#!/aframe-modify-model-material?path=index.html:1:0
+title: "3D 모델"
+examples: ""
+# - title: Modifying Material of Model
+src: "https://glitch.com/edit/#!/aframe-modify-model-material?path=index.html:1:0"
 ---
 
 [3loaders]: https://github.com/mrdoob/three.js/tree/dev/examples/js/loaders
@@ -60,7 +60,7 @@ Refer to [호스팅 및 게시 &mdash; 호스팅 모델](./hosting-and-publishin
 
 [modify]: https://glitch.com/edit/#!/aframe-modify-model-material?path=index.html:1:0
 
-모델의 재질을 수정하려면 모델이 로드될 때까지 기다렸다가 모델에서 생성된 three.js 메쉬를 수정해야 합니다. A-Frame 모델 구성 요소는 네트워크에서 모델을 요청하고, 모델을 구문 분석하고, three.js 메쉬 또는 객체를 생성하고, `.getObject3D('mesh') 아래의 `<a-entity>` 아래에 로드합니다. `. 우리는 그 메쉬에 접근하여 무엇이든 수정할 수 있습니다. 이 경우에는 three.js 재질을 수정할 수 있습니다.
+모델의 재질을 수정하려면 모델이 로드될 때까지 기다렸다가 모델에서 생성된 three.js 메쉬를 수정해야 합니다. A-Frame 모델 구성 요소는 네트워크에서 모델을 요청하고, 모델을 구문 분석하고, three.js 메쉬 또는 객체를 생성하고, `.getObject3D('mesh') 아래의 '<a-entity>' 아래에 로드합니다. `. 우리는 그 메쉬에 접근하여 무엇이든 수정할 수 있습니다. 이 경우에는 three.js 재질을 수정할 수 있습니다.
 
 [로드된 모델의 재료 수정]의 이 라이브 예를 참조하십시오.[modify].
 

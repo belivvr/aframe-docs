@@ -1,17 +1,9 @@
 ---
 id: doc10
 title: JavaScript, Events, DOM APIs
-examples:
-  - title: A-Frame School &mdash; Getting Entities
-    src: https://glitch.com/edit/#!/aframe-school-js?path=solution.html
-  - title: A-Frame School &mdash; Modifying Entities
-    src: https://glitch.com/edit/#!/aframe-school-js?path=solution2.html
-  - title: A-Frame School &mdash; Creating Entities
-    src: https://glitch.com/edit/#!/aframe-school-js?path=solution3.html
-  - title: A-Frame School &mdash; Handling Events
-    src: https://glitch.com/edit/#!/aframe-school-js?path=solution4.html
-  - title: Animated Lights
-    src: https://glitch.com/edit/#!/aframe-animated-lights?path=index.html
+examples: ""
+# - title: Animated Lights
+src: "https://glitch.com/edit/#!/aframe-animated-lights?path=index.html"
 ---
 
 [geometry]: ../components/geometry.md

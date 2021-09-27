@@ -1,6 +1,6 @@
 ---
 id: doc2
-title: three.js로 개발하기
+title: "three.js로 개발하기"
 ---
 
 [three.js]: http://threejs.org

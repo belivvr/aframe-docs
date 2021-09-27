@@ -25,7 +25,7 @@ const siteConfig = {
   // title: 'Aframe Korea', // Title for your website. / 이게 홈 태그랑 같이 물러있음
   tagline: 'A Aframe Korea site for koreans',
   url: 'https://aframe.belivvr.com', // Your website URL
-  baseUrl: 'docs/aframe-docs/', // Base URL for your project */
+  baseUrl: '/docs/aframe-docs/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.githubio',
   //   baseUrl: '/test-site/',
@@ -40,6 +40,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'doc1', label: 'Docs'},
+    {href: "https://github.com/belivvr/aframe-docs", label: "Github"},
     {doc: 'doc4', label: 'API'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
@@ -92,6 +93,8 @@ const siteConfig = {
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
+
+  editUrl: 'https://github.com/belivvr/aframe-docs/blob/master/docs/',
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
