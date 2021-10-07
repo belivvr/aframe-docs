@@ -1,0 +1,30 @@
+{
+  "unversionedId": "doc14",
+  "id": "doc14",
+  "isDocsHomePage": false,
+  "title": "구성 요소 작성",
+  "description": "[component]: ../core/component.md",
+  "source": "@site/../docs/writing-a-component.md",
+  "sourceDirName": ".",
+  "slug": "/doc14",
+  "permalink": "/docs/aframe-docs/docs/doc14",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/writing-a-component.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc14",
+    "title": "구성 요소 작성"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "VR 헤드셋 및 WebVR 브라우저",
+    "permalink": "/docs/aframe-docs/docs/doc13"
+  },
+  "next": {
+    "title": "three.js로 개발하기",
+    "permalink": "/docs/aframe-docs/docs/doc2"
+  }
+}

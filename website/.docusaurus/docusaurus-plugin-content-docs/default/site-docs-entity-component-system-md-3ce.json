@@ -1,0 +1,30 @@
+{
+  "unversionedId": "doc3",
+  "id": "doc3",
+  "isDocsHomePage": false,
+  "title": "엔티티 컴포넌트 시스템",
+  "description": "[ecs]//wikipedia.org/wiki/Entitycomponentsystem",
+  "source": "@site/../docs/entity-component-system.md",
+  "sourceDirName": ".",
+  "slug": "/doc3",
+  "permalink": "/docs/aframe-docs/docs/doc3",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/entity-component-system.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc3",
+    "title": "엔티티 컴포넌트 시스템"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "three.js로 개발하기",
+    "permalink": "/docs/aframe-docs/docs/doc2"
+  },
+  "next": {
+    "title": "자주 묻는 질문",
+    "permalink": "/docs/aframe-docs/docs/doc4"
+  }
+}

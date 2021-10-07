@@ -1,0 +1,30 @@
+{
+  "unversionedId": "doc13",
+  "id": "doc13",
+  "isDocsHomePage": false,
+  "title": "VR 헤드셋 및 WebVR 브라우저",
+  "description": "[w3c]//w3c.github.io/webvr/",
+  "source": "@site/../docs/vr-headsets-and-webvr-browsers.md",
+  "sourceDirName": ".",
+  "slug": "/doc13",
+  "permalink": "/docs/aframe-docs/docs/doc13",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/vr-headsets-and-webvr-browsers.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc13",
+    "title": "VR 헤드셋 및 WebVR 브라우저"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "비주얼 인스펙터 및 개발 도구",
+    "permalink": "/docs/aframe-docs/docs/doc12"
+  },
+  "next": {
+    "title": "구성 요소 작성",
+    "permalink": "/docs/aframe-docs/docs/doc14"
+  }
+}

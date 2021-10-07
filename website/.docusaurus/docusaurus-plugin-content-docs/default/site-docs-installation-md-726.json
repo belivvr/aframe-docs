@@ -1,0 +1,30 @@
+{
+  "unversionedId": "doc8",
+  "id": "doc8",
+  "isDocsHomePage": false,
+  "title": "설치",
+  "description": "이 설치 섹션에서는 A-Frame을 시작하기 위해 몇 가지 방법을 제공하지만,",
+  "source": "@site/../docs/installation.md",
+  "sourceDirName": ".",
+  "slug": "/doc8",
+  "permalink": "/docs/aframe-docs/docs/doc8",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/installation.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc8",
+    "title": "설치"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/aframe-docs/docs/doc7"
+  },
+  "next": {
+    "title": "상호 작용 및 컨트롤러",
+    "permalink": "/docs/aframe-docs/docs/doc9"
+  }
+}

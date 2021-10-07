@@ -1,0 +1,30 @@
+{
+  "unversionedId": "doc6",
+  "id": "doc6",
+  "isDocsHomePage": false,
+  "title": "HTML 및 Primitives",
+  "description": "[component]: ../core/component.md",
+  "source": "@site/../docs/html-and-primitives.md",
+  "sourceDirName": ".",
+  "slug": "/doc6",
+  "permalink": "/docs/aframe-docs/docs/doc6",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/html-and-primitives.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc6",
+    "title": "HTML 및 Primitives"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "호스팅 & 게시",
+    "permalink": "/docs/aframe-docs/docs/doc5"
+  },
+  "next": {
+    "title": "Introduction",
+    "permalink": "/docs/aframe-docs/docs/doc7"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "docs": [
+      {
+        "type": "category",
+        "collapsed": true,
+        "collapsible": true,
+        "label": "Introduction",
+        "items": [
+          {
+            "type": "link",
+            "label": "Best Practices",
+            "href": "/docs/aframe-docs/docs/"
+          },
+          {
+            "type": "link",
+            "label": "three.js로 개발하기",
+            "href": "/docs/aframe-docs/docs/doc2"
+          },
+          {
+            "type": "link",
+            "label": "엔티티 컴포넌트 시스템",
+            "href": "/docs/aframe-docs/docs/doc3"
+          },
+          {
+            "type": "link",
+            "label": "자주 묻는 질문",
+            "href": "/docs/aframe-docs/docs/doc4"
+          },
+          {
+            "type": "link",
+            "label": "호스팅 & 게시",
+            "href": "/docs/aframe-docs/docs/doc5"
+          },
+          {
+            "type": "link",
+            "label": "HTML 및 Primitives",
+            "href": "/docs/aframe-docs/docs/doc6"
+          },
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/aframe-docs/docs/doc7"
+          },
+          {
+            "type": "link",
+            "label": "설치",
+            "href": "/docs/aframe-docs/docs/doc8"
+          },
+          {
+            "type": "link",
+            "label": "상호 작용 및 컨트롤러",
+            "href": "/docs/aframe-docs/docs/doc9"
+          },
+          {
+            "type": "link",
+            "label": "JavaScript, Events, DOM APIs",
+            "href": "/docs/aframe-docs/docs/doc10"
+          },
+          {
+            "type": "link",
+            "label": "3D 모델",
+            "href": "/docs/aframe-docs/docs/doc11"
+          },
+          {
+            "type": "link",
+            "label": "비주얼 인스펙터 및 개발 도구",
+            "href": "/docs/aframe-docs/docs/doc12"
+          },
+          {
+            "type": "link",
+            "label": "VR 헤드셋 및 WebVR 브라우저",
+            "href": "/docs/aframe-docs/docs/doc13"
+          },
+          {
+            "type": "link",
+            "label": "구성 요소 작성",
+            "href": "/docs/aframe-docs/docs/doc14"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "collapsed": true,
+        "collapsible": true,
+        "label": "Guide",
+        "items": [
+          {
+            "type": "link",
+            "label": "three.js로 개발하기",
+            "href": "/docs/aframe-docs/docs/doc2"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "collapsed": true,
+        "collapsible": true,
+        "label": "Core API",
+        "items": [
+          {
+            "type": "link",
+            "label": "엔티티 컴포넌트 시스템",
+            "href": "/docs/aframe-docs/docs/doc3"
+          }
+        ]
+      }
+    ],
+    "docs-other": [
+      {
+        "type": "category",
+        "collapsed": true,
+        "collapsible": true,
+        "label": "First Category",
+        "items": [
+          {
+            "type": "link",
+            "label": "자주 묻는 질문",
+            "href": "/docs/aframe-docs/docs/doc4"
+          },
+          {
+            "type": "link",
+            "label": "호스팅 & 게시",
+            "href": "/docs/aframe-docs/docs/doc5"
+          }
+        ]
+      }
+    ]
+  }
+}

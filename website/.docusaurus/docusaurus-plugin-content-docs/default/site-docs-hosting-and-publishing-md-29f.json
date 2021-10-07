@@ -1,0 +1,30 @@
+{
+  "unversionedId": "doc5",
+  "id": "doc5",
+  "isDocsHomePage": false,
+  "title": "호스팅 & 게시",
+  "description": "이 섹션에서는 전 세계가 볼 수 있도록 A-Frame 사이트와 해당 자산을 웹에 배포, 호스팅 및 게시하는 여러 방법을 보여줍니다.",
+  "source": "@site/../docs/hosting-and-publishing.md",
+  "sourceDirName": ".",
+  "slug": "/doc5",
+  "permalink": "/docs/aframe-docs/docs/doc5",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/hosting-and-publishing.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc5",
+    "title": "호스팅 & 게시"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "자주 묻는 질문",
+    "permalink": "/docs/aframe-docs/docs/doc4"
+  },
+  "next": {
+    "title": "HTML 및 Primitives",
+    "permalink": "/docs/aframe-docs/docs/doc6"
+  }
+}

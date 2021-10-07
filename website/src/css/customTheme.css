@@ -1,0 +1,86 @@
+:root{
+  --ifm-color-primary-lightest: #405608;
+  --ifm-color-primary-lighter: #384C07;
+  --ifm-color-primary-light: #364907;
+  --ifm-color-primary: #a77d4d;
+  --ifm-color-primary-dark: #2C3B05;
+  --ifm-color-primary-darker: #2A3805;
+  --ifm-color-primary-darkest: #222E04;
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #fff;
+  --ifm-background-surface-color: #314206;
+}
+
+html[data-theme='light'] {
+  /* --ifm-background-color: #fff; */
+  --ifm-background-surface-color: #314206;
+}
+
+.navbar__items--right{
+  /* display: none; */
+}
+
+/* 넷바 Theme 안보이게하깅 */
+.react-toggle-track{
+  display: none;
+}
+
+.navbar{
+  padding: 11px;
+  width: 100%;
+  z-index: 999999;
+}
+
+.navbar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.navbar__link{
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.navbar__brand {
+  color: inherit;
+  text-decoration: none;
+  height: 34px;
+}
+
+.navbar--fixed-top{
+  position: fixed;
+}
+
+@media (max-width: 996px){
+.navbar__toggle {
+    display: inherit;
+    color: white;
+}
+.navbar__brand{
+  margin: 0 auto;
+}
+.navbar-sidebar{
+  width: 100%;
+  background-color: #fff;
+}
+
+.navbar-sidebar__brand{
+  /* display: none; */
+  background-color: #000;
+}
+}
+
+.navbar-sidebar .navbar__brand{
+  margin: 0;
+  /* background-color: #a77d4d; */
+  /* color: #000; */
+  /* display: none; */
+}
+

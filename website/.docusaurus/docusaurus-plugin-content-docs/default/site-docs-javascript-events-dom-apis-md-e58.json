@@ -1,0 +1,30 @@
+{
+  "unversionedId": "doc10",
+  "id": "doc10",
+  "isDocsHomePage": false,
+  "title": "JavaScript, Events, DOM APIs",
+  "description": "[geometry]: ../components/geometry.md",
+  "source": "@site/../docs/javascript-events-dom-apis.md",
+  "sourceDirName": ".",
+  "slug": "/doc10",
+  "permalink": "/docs/aframe-docs/docs/doc10",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/javascript-events-dom-apis.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc10",
+    "title": "JavaScript, Events, DOM APIs"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "상호 작용 및 컨트롤러",
+    "permalink": "/docs/aframe-docs/docs/doc9"
+  },
+  "next": {
+    "title": "3D 모델",
+    "permalink": "/docs/aframe-docs/docs/doc11"
+  }
+}

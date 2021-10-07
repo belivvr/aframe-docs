@@ -1,0 +1,746 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/docs/aframe-docs/docs",
+          "tagsPath": "/docs/aframe-docs/docs/tags",
+          "versionEditUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs",
+          "versionEditUrlLocalized": "https://github.com/belivvr/aframe-docs/blob/master/docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "versionBanner": null,
+          "versionBadge": false,
+          "versionClassName": "docs-version-current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "C:\\Users\\rlatj\\Homestead\\aframe-docs\\website\\sidebars.json",
+          "contentPath": "C:\\Users\\rlatj\\Homestead\\aframe-docs\\docs",
+          "contentPathLocalized": "C:\\Users\\rlatj\\Homestead\\aframe-docs\\website\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "mainDocId": "doc1",
+          "sidebars": {
+            "docs": [
+              {
+                "type": "category",
+                "collapsed": true,
+                "collapsible": true,
+                "label": "Introduction",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "doc1"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc2"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc3"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc4"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc5"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc6"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc7"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc8"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc9"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc10"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc11"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc12"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc13"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc14"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "collapsed": true,
+                "collapsible": true,
+                "label": "Guide",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "doc2"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "collapsed": true,
+                "collapsible": true,
+                "label": "Core API",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "doc3"
+                  }
+                ]
+              }
+            ],
+            "docs-other": [
+              {
+                "type": "category",
+                "collapsed": true,
+                "collapsible": true,
+                "label": "First Category",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "doc4"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "doc5"
+                  }
+                ]
+              }
+            ]
+          },
+          "docs": [
+            {
+              "unversionedId": "doc1",
+              "id": "doc1",
+              "isDocsHomePage": true,
+              "title": "Best Practices",
+              "description": "A-Frame",
+              "source": "@site/../docs/best-practices.md",
+              "sourceDirName": ".",
+              "slug": "/",
+              "permalink": "/docs/aframe-docs/docs/",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/best-practices.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc1",
+                "title": "Best Practices"
+              },
+              "sidebar": "docs",
+              "next": {
+                "title": "three.js로 개발하기",
+                "permalink": "/docs/aframe-docs/docs/doc2"
+              }
+            },
+            {
+              "unversionedId": "doc10",
+              "id": "doc10",
+              "isDocsHomePage": false,
+              "title": "JavaScript, Events, DOM APIs",
+              "description": "[geometry]: ../components/geometry.md",
+              "source": "@site/../docs/javascript-events-dom-apis.md",
+              "sourceDirName": ".",
+              "slug": "/doc10",
+              "permalink": "/docs/aframe-docs/docs/doc10",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/javascript-events-dom-apis.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc10",
+                "title": "JavaScript, Events, DOM APIs"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "상호 작용 및 컨트롤러",
+                "permalink": "/docs/aframe-docs/docs/doc9"
+              },
+              "next": {
+                "title": "3D 모델",
+                "permalink": "/docs/aframe-docs/docs/doc11"
+              }
+            },
+            {
+              "unversionedId": "doc11",
+              "id": "doc11",
+              "isDocsHomePage": false,
+              "title": "3D 모델",
+              "description": "[3loaders]//github.com/mrdoob/three.js/tree/dev/examples/js/loaders",
+              "source": "@site/../docs/models.md",
+              "sourceDirName": ".",
+              "slug": "/doc11",
+              "permalink": "/docs/aframe-docs/docs/doc11",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/models.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc11",
+                "title": "3D 모델"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "JavaScript, Events, DOM APIs",
+                "permalink": "/docs/aframe-docs/docs/doc10"
+              },
+              "next": {
+                "title": "비주얼 인스펙터 및 개발 도구",
+                "permalink": "/docs/aframe-docs/docs/doc12"
+              }
+            },
+            {
+              "unversionedId": "doc12",
+              "id": "doc12",
+              "isDocsHomePage": false,
+              "title": "비주얼 인스펙터 및 개발 도구",
+              "description": "[inspector]//github.com/aframevr/aframe-inspector",
+              "source": "@site/../docs/visual-inspector-and-dev-tools.md",
+              "sourceDirName": ".",
+              "slug": "/doc12",
+              "permalink": "/docs/aframe-docs/docs/doc12",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/visual-inspector-and-dev-tools.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc12",
+                "title": "비주얼 인스펙터 및 개발 도구"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "3D 모델",
+                "permalink": "/docs/aframe-docs/docs/doc11"
+              },
+              "next": {
+                "title": "VR 헤드셋 및 WebVR 브라우저",
+                "permalink": "/docs/aframe-docs/docs/doc13"
+              }
+            },
+            {
+              "unversionedId": "doc13",
+              "id": "doc13",
+              "isDocsHomePage": false,
+              "title": "VR 헤드셋 및 WebVR 브라우저",
+              "description": "[w3c]//w3c.github.io/webvr/",
+              "source": "@site/../docs/vr-headsets-and-webvr-browsers.md",
+              "sourceDirName": ".",
+              "slug": "/doc13",
+              "permalink": "/docs/aframe-docs/docs/doc13",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/vr-headsets-and-webvr-browsers.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc13",
+                "title": "VR 헤드셋 및 WebVR 브라우저"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "비주얼 인스펙터 및 개발 도구",
+                "permalink": "/docs/aframe-docs/docs/doc12"
+              },
+              "next": {
+                "title": "구성 요소 작성",
+                "permalink": "/docs/aframe-docs/docs/doc14"
+              }
+            },
+            {
+              "unversionedId": "doc14",
+              "id": "doc14",
+              "isDocsHomePage": false,
+              "title": "구성 요소 작성",
+              "description": "[component]: ../core/component.md",
+              "source": "@site/../docs/writing-a-component.md",
+              "sourceDirName": ".",
+              "slug": "/doc14",
+              "permalink": "/docs/aframe-docs/docs/doc14",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/writing-a-component.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc14",
+                "title": "구성 요소 작성"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "VR 헤드셋 및 WebVR 브라우저",
+                "permalink": "/docs/aframe-docs/docs/doc13"
+              },
+              "next": {
+                "title": "three.js로 개발하기",
+                "permalink": "/docs/aframe-docs/docs/doc2"
+              }
+            },
+            {
+              "unversionedId": "doc2",
+              "id": "doc2",
+              "isDocsHomePage": false,
+              "title": "three.js로 개발하기",
+              "description": "[three.js]//threejs.org",
+              "source": "@site/../docs/developing-with-threejs.md",
+              "sourceDirName": ".",
+              "slug": "/doc2",
+              "permalink": "/docs/aframe-docs/docs/doc2",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/developing-with-threejs.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc2",
+                "title": "three.js로 개발하기"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Best Practices",
+                "permalink": "/docs/aframe-docs/docs/"
+              },
+              "next": {
+                "title": "엔티티 컴포넌트 시스템",
+                "permalink": "/docs/aframe-docs/docs/doc3"
+              }
+            },
+            {
+              "unversionedId": "doc3",
+              "id": "doc3",
+              "isDocsHomePage": false,
+              "title": "엔티티 컴포넌트 시스템",
+              "description": "[ecs]//wikipedia.org/wiki/Entitycomponentsystem",
+              "source": "@site/../docs/entity-component-system.md",
+              "sourceDirName": ".",
+              "slug": "/doc3",
+              "permalink": "/docs/aframe-docs/docs/doc3",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/entity-component-system.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc3",
+                "title": "엔티티 컴포넌트 시스템"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "three.js로 개발하기",
+                "permalink": "/docs/aframe-docs/docs/doc2"
+              },
+              "next": {
+                "title": "자주 묻는 질문",
+                "permalink": "/docs/aframe-docs/docs/doc4"
+              }
+            },
+            {
+              "unversionedId": "doc4",
+              "id": "doc4",
+              "isDocsHomePage": false,
+              "title": "자주 묻는 질문",
+              "description": "[ecs]: ./entity-component-system.md",
+              "source": "@site/../docs/faq.md",
+              "sourceDirName": ".",
+              "slug": "/doc4",
+              "permalink": "/docs/aframe-docs/docs/doc4",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/faq.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc4",
+                "title": "자주 묻는 질문"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "엔티티 컴포넌트 시스템",
+                "permalink": "/docs/aframe-docs/docs/doc3"
+              },
+              "next": {
+                "title": "호스팅 & 게시",
+                "permalink": "/docs/aframe-docs/docs/doc5"
+              }
+            },
+            {
+              "unversionedId": "doc5",
+              "id": "doc5",
+              "isDocsHomePage": false,
+              "title": "호스팅 & 게시",
+              "description": "이 섹션에서는 전 세계가 볼 수 있도록 A-Frame 사이트와 해당 자산을 웹에 배포, 호스팅 및 게시하는 여러 방법을 보여줍니다.",
+              "source": "@site/../docs/hosting-and-publishing.md",
+              "sourceDirName": ".",
+              "slug": "/doc5",
+              "permalink": "/docs/aframe-docs/docs/doc5",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/hosting-and-publishing.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc5",
+                "title": "호스팅 & 게시"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "자주 묻는 질문",
+                "permalink": "/docs/aframe-docs/docs/doc4"
+              },
+              "next": {
+                "title": "HTML 및 Primitives",
+                "permalink": "/docs/aframe-docs/docs/doc6"
+              }
+            },
+            {
+              "unversionedId": "doc6",
+              "id": "doc6",
+              "isDocsHomePage": false,
+              "title": "HTML 및 Primitives",
+              "description": "[component]: ../core/component.md",
+              "source": "@site/../docs/html-and-primitives.md",
+              "sourceDirName": ".",
+              "slug": "/doc6",
+              "permalink": "/docs/aframe-docs/docs/doc6",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/html-and-primitives.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc6",
+                "title": "HTML 및 Primitives"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "호스팅 & 게시",
+                "permalink": "/docs/aframe-docs/docs/doc5"
+              },
+              "next": {
+                "title": "Introduction",
+                "permalink": "/docs/aframe-docs/docs/doc7"
+              }
+            },
+            {
+              "unversionedId": "doc7",
+              "id": "doc7",
+              "isDocsHomePage": false,
+              "title": "Introduction",
+              "description": "[three.js]//threejs.org",
+              "source": "@site/../docs/index.md",
+              "sourceDirName": ".",
+              "slug": "/doc7",
+              "permalink": "/docs/aframe-docs/docs/doc7",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/index.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc7",
+                "title": "Introduction"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "HTML 및 Primitives",
+                "permalink": "/docs/aframe-docs/docs/doc6"
+              },
+              "next": {
+                "title": "설치",
+                "permalink": "/docs/aframe-docs/docs/doc8"
+              }
+            },
+            {
+              "unversionedId": "doc8",
+              "id": "doc8",
+              "isDocsHomePage": false,
+              "title": "설치",
+              "description": "이 설치 섹션에서는 A-Frame을 시작하기 위해 몇 가지 방법을 제공하지만,",
+              "source": "@site/../docs/installation.md",
+              "sourceDirName": ".",
+              "slug": "/doc8",
+              "permalink": "/docs/aframe-docs/docs/doc8",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/installation.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc8",
+                "title": "설치"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/aframe-docs/docs/doc7"
+              },
+              "next": {
+                "title": "상호 작용 및 컨트롤러",
+                "permalink": "/docs/aframe-docs/docs/doc9"
+              }
+            },
+            {
+              "unversionedId": "doc9",
+              "id": "doc9",
+              "isDocsHomePage": false,
+              "title": "상호 작용 및 컨트롤러",
+              "description": "A-Frame이 지원할 수 있는 다양한 플랫폼, 장치, 입력 방법으로 인해 상호 작용을 추가하는 진정한 방법은 없습니다.",
+              "source": "@site/../docs/interactions-and-controllers.md",
+              "sourceDirName": ".",
+              "slug": "/doc9",
+              "permalink": "/docs/aframe-docs/docs/doc9",
+              "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/interactions-and-controllers.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "doc9",
+                "title": "상호 작용 및 컨트롤러"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "설치",
+                "permalink": "/docs/aframe-docs/docs/doc8"
+              },
+              "next": {
+                "title": "JavaScript, Events, DOM APIs",
+                "permalink": "/docs/aframe-docs/docs/doc10"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [
+        {
+          "id": "New Version 1.0.0",
+          "metadata": {
+            "permalink": "/docs/aframe-docs/blog/2017/10/24/new-version-1.0.0",
+            "source": "@site/blog/2017-10-24-new-version-1.0.0.md",
+            "title": "New Version 1.0.0",
+            "description": "This blog post will test file name parsing issues when periods are present.",
+            "date": "2017-10-24T00:00:00.000Z",
+            "formattedDate": "October 24, 2017",
+            "tags": [],
+            "readingTime": 0.065,
+            "truncated": false,
+            "authors": [
+              {
+                "name": "Eric Nakagawa",
+                "url": "http://twitter.com/ericnakagawa"
+              }
+            ],
+            "nextItem": {
+              "title": "Adding RSS Support",
+              "permalink": "/docs/aframe-docs/blog/2017/09/26/adding-rss"
+            }
+          }
+        },
+        {
+          "id": "Adding RSS Support",
+          "metadata": {
+            "permalink": "/docs/aframe-docs/blog/2017/09/26/adding-rss",
+            "source": "@site/blog/2017-09-26-adding-rss.md",
+            "title": "Adding RSS Support",
+            "description": "This is a test post.",
+            "date": "2017-09-26T00:00:00.000Z",
+            "formattedDate": "September 26, 2017",
+            "tags": [],
+            "readingTime": 0.055,
+            "truncated": false,
+            "authors": [
+              {
+                "name": "Eric Nakagawa",
+                "url": "http://twitter.com/ericnakagawa"
+              }
+            ],
+            "prevItem": {
+              "title": "New Version 1.0.0",
+              "permalink": "/docs/aframe-docs/blog/2017/10/24/new-version-1.0.0"
+            },
+            "nextItem": {
+              "title": "Adding RSS Support - RSS Truncation Test",
+              "permalink": "/docs/aframe-docs/blog/2017/09/25/testing-rss"
+            }
+          }
+        },
+        {
+          "id": "Adding RSS Support - RSS Truncation Test",
+          "metadata": {
+            "permalink": "/docs/aframe-docs/blog/2017/09/25/testing-rss",
+            "source": "@site/blog/2017-09-25-testing-rss.md",
+            "title": "Adding RSS Support - RSS Truncation Test",
+            "description": "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890",
+            "date": "2017-09-25T00:00:00.000Z",
+            "formattedDate": "September 25, 2017",
+            "tags": [],
+            "readingTime": 0.065,
+            "truncated": true,
+            "authors": [
+              {
+                "name": "Eric Nakagawa",
+                "url": "http://twitter.com/ericnakagawa"
+              }
+            ],
+            "prevItem": {
+              "title": "Adding RSS Support",
+              "permalink": "/docs/aframe-docs/blog/2017/09/26/adding-rss"
+            },
+            "nextItem": {
+              "title": "New Blog Post",
+              "permalink": "/docs/aframe-docs/blog/2017/04/10/blog-post-two"
+            }
+          }
+        },
+        {
+          "id": "New Blog Post",
+          "metadata": {
+            "permalink": "/docs/aframe-docs/blog/2017/04/10/blog-post-two",
+            "source": "@site/blog/2017-04-10-blog-post-two.md",
+            "title": "New Blog Post",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.",
+            "date": "2017-04-10T00:00:00.000Z",
+            "formattedDate": "April 10, 2017",
+            "tags": [],
+            "readingTime": 2.31,
+            "truncated": true,
+            "authors": [
+              {
+                "name": "Blog Author",
+                "url": "http://twitter.com/"
+              }
+            ],
+            "prevItem": {
+              "title": "Adding RSS Support - RSS Truncation Test",
+              "permalink": "/docs/aframe-docs/blog/2017/09/25/testing-rss"
+            },
+            "nextItem": {
+              "title": "Blog Title",
+              "permalink": "/docs/aframe-docs/blog/2016/03/11/blog-post"
+            }
+          }
+        },
+        {
+          "id": "Blog Title",
+          "metadata": {
+            "permalink": "/docs/aframe-docs/blog/2016/03/11/blog-post",
+            "source": "@site/blog/2016-03-11-blog-post.md",
+            "title": "Blog Title",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.",
+            "date": "2016-03-11T00:00:00.000Z",
+            "formattedDate": "March 11, 2016",
+            "tags": [],
+            "readingTime": 2.31,
+            "truncated": true,
+            "authors": [
+              {
+                "name": "Blog Author",
+                "url": "http://twitter.com/"
+              }
+            ],
+            "prevItem": {
+              "title": "New Blog Post",
+              "permalink": "/docs/aframe-docs/blog/2017/04/10/blog-post-two"
+            }
+          }
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "metadata": {
+            "permalink": "/docs/aframe-docs/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 5,
+            "previousPage": null,
+            "nextPage": null,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          },
+          "items": [
+            "New Version 1.0.0",
+            "Adding RSS Support",
+            "Adding RSS Support - RSS Truncation Test",
+            "New Blog Post",
+            "Blog Title"
+          ]
+        }
+      ],
+      "blogTags": {},
+      "blogTagsListPath": null
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/docs/aframe-docs/helloReact",
+        "source": "@site/src/pages/helloReact.js"
+      },
+      {
+        "type": "jsx",
+        "permalink": "/docs/aframe-docs/help",
+        "source": "@site/src/pages/help.js"
+      },
+      {
+        "type": "jsx",
+        "permalink": "/docs/aframe-docs/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "jsx",
+        "permalink": "/docs/aframe-docs/users",
+        "source": "@site/src/pages/users.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

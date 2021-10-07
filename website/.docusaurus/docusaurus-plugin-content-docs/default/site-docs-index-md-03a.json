@@ -1,0 +1,30 @@
+{
+  "unversionedId": "doc7",
+  "id": "doc7",
+  "isDocsHomePage": false,
+  "title": "Introduction",
+  "description": "[three.js]//threejs.org",
+  "source": "@site/../docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/doc7",
+  "permalink": "/docs/aframe-docs/docs/doc7",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/index.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc7",
+    "title": "Introduction"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "HTML 및 Primitives",
+    "permalink": "/docs/aframe-docs/docs/doc6"
+  },
+  "next": {
+    "title": "설치",
+    "permalink": "/docs/aframe-docs/docs/doc8"
+  }
+}

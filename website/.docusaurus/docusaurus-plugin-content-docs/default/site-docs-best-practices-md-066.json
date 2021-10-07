@@ -1,0 +1,26 @@
+{
+  "unversionedId": "doc1",
+  "id": "doc1",
+  "isDocsHomePage": true,
+  "title": "Best Practices",
+  "description": "A-Frame",
+  "source": "@site/../docs/best-practices.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/docs/aframe-docs/docs/",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/best-practices.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc1",
+    "title": "Best Practices"
+  },
+  "sidebar": "docs",
+  "next": {
+    "title": "three.js로 개발하기",
+    "permalink": "/docs/aframe-docs/docs/doc2"
+  }
+}

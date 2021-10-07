@@ -1,0 +1,30 @@
+{
+  "unversionedId": "doc9",
+  "id": "doc9",
+  "isDocsHomePage": false,
+  "title": "상호 작용 및 컨트롤러",
+  "description": "A-Frame이 지원할 수 있는 다양한 플랫폼, 장치, 입력 방법으로 인해 상호 작용을 추가하는 진정한 방법은 없습니다.",
+  "source": "@site/../docs/interactions-and-controllers.md",
+  "sourceDirName": ".",
+  "slug": "/doc9",
+  "permalink": "/docs/aframe-docs/docs/doc9",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/interactions-and-controllers.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc9",
+    "title": "상호 작용 및 컨트롤러"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "설치",
+    "permalink": "/docs/aframe-docs/docs/doc8"
+  },
+  "next": {
+    "title": "JavaScript, Events, DOM APIs",
+    "permalink": "/docs/aframe-docs/docs/doc10"
+  }
+}

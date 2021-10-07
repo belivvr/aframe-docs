@@ -1,0 +1,30 @@
+{
+  "unversionedId": "doc11",
+  "id": "doc11",
+  "isDocsHomePage": false,
+  "title": "3D 모델",
+  "description": "[3loaders]//github.com/mrdoob/three.js/tree/dev/examples/js/loaders",
+  "source": "@site/../docs/models.md",
+  "sourceDirName": ".",
+  "slug": "/doc11",
+  "permalink": "/docs/aframe-docs/docs/doc11",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/models.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc11",
+    "title": "3D 모델"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "JavaScript, Events, DOM APIs",
+    "permalink": "/docs/aframe-docs/docs/doc10"
+  },
+  "next": {
+    "title": "비주얼 인스펙터 및 개발 도구",
+    "permalink": "/docs/aframe-docs/docs/doc12"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "doc12",
+  "id": "doc12",
+  "isDocsHomePage": false,
+  "title": "비주얼 인스펙터 및 개발 도구",
+  "description": "[inspector]//github.com/aframevr/aframe-inspector",
+  "source": "@site/../docs/visual-inspector-and-dev-tools.md",
+  "sourceDirName": ".",
+  "slug": "/doc12",
+  "permalink": "/docs/aframe-docs/docs/doc12",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/visual-inspector-and-dev-tools.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc12",
+    "title": "비주얼 인스펙터 및 개발 도구"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "3D 모델",
+    "permalink": "/docs/aframe-docs/docs/doc11"
+  },
+  "next": {
+    "title": "VR 헤드셋 및 WebVR 브라우저",
+    "permalink": "/docs/aframe-docs/docs/doc13"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "doc4",
+  "id": "doc4",
+  "isDocsHomePage": false,
+  "title": "자주 묻는 질문",
+  "description": "[ecs]: ./entity-component-system.md",
+  "source": "@site/../docs/faq.md",
+  "sourceDirName": ".",
+  "slug": "/doc4",
+  "permalink": "/docs/aframe-docs/docs/doc4",
+  "editUrl": "https://github.com/belivvr/aframe-docs/blob/master/docs/../docs/faq.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "doc4",
+    "title": "자주 묻는 질문"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "엔티티 컴포넌트 시스템",
+    "permalink": "/docs/aframe-docs/docs/doc3"
+  },
+  "next": {
+    "title": "호스팅 & 게시",
+    "permalink": "/docs/aframe-docs/docs/doc5"
+  }
+}

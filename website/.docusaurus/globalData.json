@@ -1,0 +1,88 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs/aframe-docs/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs/aframe-docs/docs",
+          "mainDocId": "doc1",
+          "docs": [
+            {
+              "id": "doc1",
+              "path": "/docs/aframe-docs/docs/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc10",
+              "path": "/docs/aframe-docs/docs/doc10",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc11",
+              "path": "/docs/aframe-docs/docs/doc11",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc12",
+              "path": "/docs/aframe-docs/docs/doc12",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc13",
+              "path": "/docs/aframe-docs/docs/doc13",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc14",
+              "path": "/docs/aframe-docs/docs/doc14",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc2",
+              "path": "/docs/aframe-docs/docs/doc2",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc3",
+              "path": "/docs/aframe-docs/docs/doc3",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc4",
+              "path": "/docs/aframe-docs/docs/doc4",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc5",
+              "path": "/docs/aframe-docs/docs/doc5",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc6",
+              "path": "/docs/aframe-docs/docs/doc6",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc7",
+              "path": "/docs/aframe-docs/docs/doc7",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc8",
+              "path": "/docs/aframe-docs/docs/doc8",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc9",
+              "path": "/docs/aframe-docs/docs/doc9",
+              "sidebar": "docs"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
