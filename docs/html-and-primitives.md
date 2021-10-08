@@ -1,6 +1,6 @@
 ---
 id: doc6
-title: "HTML 및 Primitives"
+title: HTML 및 Primitives
 ---
 
 [component]: ../core/component.md

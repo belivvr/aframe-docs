@@ -2,7 +2,7 @@
   --ifm-color-primary-lightest: #405608;
   --ifm-color-primary-lighter: #384C07;
   --ifm-color-primary-light: #364907;
-  --ifm-color-primary: #a77d4d;
+  --ifm-color-primary: #314206;
   --ifm-color-primary-dark: #2C3B05;
   --ifm-color-primary-darker: #2A3805;
   --ifm-color-primary-darkest: #222E04;
@@ -18,10 +18,6 @@ html[data-theme='light'] {
   --ifm-background-surface-color: #314206;
 }
 
-.navbar__items--right{
-  /* display: none; */
-}
-
 /* 넷바 Theme 안보이게하깅 */
 .react-toggle-track{
   display: none;
@@ -30,7 +26,11 @@ html[data-theme='light'] {
 .navbar{
   padding: 11px;
   width: 100%;
-  z-index: 999999;
+  z-index: 999;
+}
+
+.navbar .logo-a{
+  width: 100%;
 }
 
 .navbar__inner {
@@ -40,6 +40,7 @@ html[data-theme='light'] {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  position: relative;
 }
 
 .navbar__link{
@@ -52,11 +53,14 @@ html[data-theme='light'] {
   color: inherit;
   text-decoration: none;
   height: 34px;
+  position: relative;
+  background: url(https://developers.belivvr.com/);
 }
 
 .navbar--fixed-top{
   position: fixed;
 }
+
 
 @media (max-width: 996px){
 .navbar__toggle {
@@ -66,6 +70,11 @@ html[data-theme='light'] {
 .navbar__brand{
   margin: 0 auto;
 }
+
+.belivvr-url{
+  margin: 0 auto;
+}
+
 .navbar-sidebar{
   width: 100%;
   background-color: #fff;
@@ -84,3 +93,18 @@ html[data-theme='light'] {
   /* display: none; */
 }
 
+.logo-a{
+  position: absolute;
+  z-index: auto;
+  top: 0;
+}
+
+.logo-url{
+  top: 0;
+  background-color: black;
+  width: 100px;
+  z-index: auto;
+  height: 61px;
+  position: absolute;
+  top: 0;
+}

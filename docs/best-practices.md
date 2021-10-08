@@ -1,7 +1,6 @@
 ---
 id: doc1
 title: Best Practices
-slug: best-prectices
 ---
 
 <!-- md 에러 -->

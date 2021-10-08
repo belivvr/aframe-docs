@@ -1,6 +1,6 @@
 ---
 id: doc14
-title: "구성 요소 작성"
+title: 구성 요소 작성
 ---
 
 [component]: ../core/component.md

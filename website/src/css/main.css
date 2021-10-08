@@ -746,7 +746,7 @@ blockquote {
   padding: 8px 0;
   position: fixed;
   width: 100%;
-  z-index: 9999;
+  z-index: 9000;
   transform: translate3d(0, 0, 0);
 }
 
@@ -763,7 +763,7 @@ blockquote {
   display: flex;
   flex-flow: row nowrap;
   height: 34px;
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .fixedHeaderContainer header {
@@ -789,7 +789,7 @@ blockquote {
   line-height: 18px;
   margin: 0;
   position: relative;
-  z-index: 9999;
+  z-index: 9000;
 }
 
 .fixedHeaderContainer header h3 {
@@ -2502,6 +2502,14 @@ input::placeholder {
 
 .theme-doc-markdown.markdown {
     padding-top: 2rem;
+}
+
+.belivvr-url{
+  /* margin-left: 0rem; */
+  position: absolute;
+  width: 170px;
+  height: 40px;
+  background-color: rgba(44, 44, 221, 0.486);
 }
 
 a:active, a:hover {

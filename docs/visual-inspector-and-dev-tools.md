@@ -1,6 +1,6 @@
 ---
 id: doc12
-title: "비주얼 인스펙터 및 개발 도구"
+title: 비주얼 인스펙터 및 개발 도구
 ---
 
 [inspector]: https://github.com/aframevr/aframe-inspector
@@ -180,7 +180,7 @@ Karma 및 Mocha와 같은 프레임워크를 사용하여 녹음을 재생하고
 자세한 내용은. 녹음을 설정하는 방법은 다음과 같습니다.
 
 1. Motion Capture Components 스크립트 태그를 HTML 파일(예: `<script src="https://unpkg.com/aframe-motion-capture-components/dist/aframe-motion-capture-components.min.js">`)
-2. 'avatar-recorder' 구성요소를 장면에 추가합니다(즉, '<a-scene avatar-recorder>`).
+2. 'avatar-recorder' 구성요소를 장면에 추가합니다(즉, `<a-scene avatar-recorder>`).
 3. VR 입장
 4. `<space>`를 눌러 녹음을 시작합니다.
 5. 움직임 및 동작 기록

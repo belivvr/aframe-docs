@@ -1,6 +1,6 @@
 ---
 id: doc5
-title: "호스팅 & 게시"
+title: 호스팅 & 게시
 ---
 
 이 섹션에서는 전 세계가 볼 수 있도록 A-Frame 사이트와 해당 자산을 웹에 배포, 호스팅 및 게시하는 여러 방법을 보여줍니다.
@@ -91,7 +91,7 @@ Neocities를 통해 사이트를 게시하는 경우 파일을 원하는 수만�
 
 아래는 워크플로 동영상입니다.
 
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/_D_C_oSKp9Y?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+<div><iframe src="https://www.youtube.com/embed/_D_C_oSKp9Y?ecver=2" width="640" height="360" frameborder="0"  allowfullscreen></iframe></div>
 
 ee는 다른 모든 자산을 제공하는 것과 동일한 방식으로 모델을 호스팅하고 서버와 CDN에서 처리하도록 할 수도 있습니다. 우리가 그들을 호스팅할 특별한 장소를 원한다면 S3가 또 다른 옵션입니다.
 

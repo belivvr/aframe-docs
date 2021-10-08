@@ -1,6 +1,6 @@
 ---
 id: doc8
-title: "설치"
+title: 설치
 ---
 
 이 설치 섹션에서는 A-Frame을 시작하기 위해 몇 가지 방법을 제공하지만,
@@ -68,7 +68,8 @@ Glitch를 사용하면 기존 프로젝트를 리믹스(즉, 복사)하여 자�
 두 가지 방법 중 하나로 상용구를 가져올 수 있습니다.
 
 <a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/">Fork on GitHub</a>
-<br>( 참고로 'discontinued'로 표기되어 있고, 함께 패키징된 Aframe 버전은 0.5이다.)
+
+( 참고로 'discontinued'로 표기되어 있고, 함께 패키징된 Aframe 버전은 0.5이다.)
 
 <a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/archive/master.zip" download="aframe-boilerplate.zip">Download .ZIP<span></span></a>
 
@@ -158,7 +159,7 @@ cordova plugin add cordova-plugin-xhr-local-file
         "
       />
   ...
-  <script src="https://cdn.jsdelivr.net/npm/aframe@1.2.0/dist/aframe-master.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/aframe@1.2.0/dist/aframe-master.min.js"></script>
   <script id='my-scene' type="text/html">
     ...your scene goes here...
   </script>
@@ -176,7 +177,6 @@ cordova plugin add cordova-plugin-xhr-local-file
 ```
 
 ### 논의
-
 
 #### 장치 준비
 

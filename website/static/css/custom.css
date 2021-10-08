@@ -7,6 +7,28 @@
 
 /* your custom css */
 
+:root {
+    --ifm-color-primary-lightest: #405608;
+    --ifm-color-primary-lighter: #384C07;
+    --ifm-color-primary-light: #364907;
+    --ifm-color-primary: #84ac21;
+    --ifm-color-primary-dark: #2C3B05;
+    --ifm-color-primary-darker: #2A3805;
+    --ifm-color-primary-darkest: #222E04;
+}
+
+.menu__link--sublist{
+    color: #15171b;
+}
+
+.menu__link--active{
+    color: #000;
+}
+
+.menu__link--active:hover{
+    color: #314206;
+}
+
 .button {
     border: 1px solid #15171b;
     border-radius: 3px;
@@ -36,6 +58,15 @@
 a:active, a:hover {
     outline-width: 0;
 }
+
+.navbar__item a {
+    font-size: 5rem;
+    color: red;
+}
+
+
+
+
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }

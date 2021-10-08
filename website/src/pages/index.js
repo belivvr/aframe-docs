@@ -6,6 +6,4 @@ import Hello from "./helloReact";
         return <Layout>
           <Hello/>
         </Layout>
-
-
       };

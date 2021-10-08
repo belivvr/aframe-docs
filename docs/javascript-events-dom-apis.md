@@ -1,9 +1,6 @@
 ---
 id: doc10
 title: JavaScript, Events, DOM APIs
-examples: ""
-# - title: Animated Lights
-src: "https://glitch.com/edit/#!/aframe-animated-lights?path=index.html"
 ---
 
 [geometry]: ../components/geometry.md

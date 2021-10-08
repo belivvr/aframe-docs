@@ -1,9 +1,6 @@
 ---
 id: doc11
-title: "3D 모델"
-examples: ""
-# - title: Modifying Material of Model
-src: "https://glitch.com/edit/#!/aframe-modify-model-material?path=index.html:1:0"
+title: 3D 모델
 ---
 
 [3loaders]: https://github.com/mrdoob/three.js/tree/dev/examples/js/loaders

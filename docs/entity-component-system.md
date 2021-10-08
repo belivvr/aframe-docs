@@ -1,9 +1,6 @@
 ---
 id: doc3
-title: "엔티티 컴포넌트 시스템"
-examples: ""
-# - title: Animated Lights
-src: "https://glitch.com/edit/#!/aframe-animated-lights?path=index.html"
+title: 엔티티 컴포넌트 시스템
 ---
 
 [ecs]: https://wikipedia.org/wiki/Entity_component_system

@@ -1,6 +1,6 @@
 ---
 id: doc13
-title: "VR 헤드셋 및 WebVR 브라우저"
+title: VR 헤드셋 및 WebVR 브라우저
 ---
 
 [w3c]: https://w3c.github.io/webvr/

@@ -1,5 +1,5 @@
 module.exports={
-  "title": "크롱이의 도큐사우루스 마이그레이션",
+  "title": "Aframe undefined",
   "tagline": "A Aframe Korea site for koreans",
   "url": "https://aframe.belivvr.com",
   "baseUrl": "/docs/aframe-docs/",
@@ -46,7 +46,8 @@ module.exports={
   "themeConfig": {
     "navbar": {
       "logo": {
-        "src": "img/AFRAME_LOGO_TMP.webp"
+        "src": "img/AFRAME_LOGO_TMP.webp",
+        "href": "https://developers.belivvr.com/"
       },
       "items": [
         {

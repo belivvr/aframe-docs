@@ -1,6 +1,6 @@
 ---
 id: doc4
-title: "자주 묻는 질문"
+title: 자주 묻는 질문
 ---
 
 [ecs]: ./entity-component-system.md

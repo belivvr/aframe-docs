@@ -1,9 +1,6 @@
 ---
 id: doc9
-title: "상호 작용 및 컨트롤러"
-examples: ""
-# - title: Escape the Room
-src: "https://glitch.com/edit/#!/wide-cream?path=index.html:1:0"
+title: 상호 작용 및 컨트롤러
 ---
 
 A-Frame이 지원할 수 있는 다양한 플랫폼, 장치, 입력 방법으로 인해 상호 작용을 추가하는 진정한 방법은 없습니다. 

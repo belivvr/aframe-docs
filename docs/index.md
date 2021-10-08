@@ -1,9 +1,6 @@
 ---
 id: doc7
 title: Introduction
-examples: ""
-# - title: Hello, World!
-src: "https://glitch.com/edit/#!/aframe?path=index.html"
 ---
 
 [three.js]: https://threejs.org
